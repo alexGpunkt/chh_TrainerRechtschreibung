@@ -1,0 +1,3052 @@
+{
+  "version": "1.0",
+  "app": "Rechtschreibtrainer",
+  "stages": [
+    {
+      "key": "doppelkonsonant",
+      "label": "Doppelkonsonanten",
+      "rule": "Nach einem kurzen betonten Vokal schreibt man den folgenden Konsonanten oft doppelt: Ball, Sonne, Klasse.",
+      "examples": [
+        "der Ball",
+        "die Sonne",
+        "rennen",
+        "die Klasse"
+      ],
+      "badge": "🏅 Doppelkonsonanten-Profi"
+    },
+    {
+      "key": "dehnung",
+      "label": "Dehnung: h, ie, langer Vokal",
+      "rule": "Ein langer Vokal wird manchmal mit h oder ie gekennzeichnet. Viele Wörter muss man sich merken oder über die Wortfamilie erschließen.",
+      "examples": [
+        "fahren",
+        "gehen",
+        "spielen",
+        "die Bahn"
+      ],
+      "badge": "🏅 Dehnungs-Detektiv"
+    },
+    {
+      "key": "s_laute",
+      "label": "s-Laute: s, ss, ß",
+      "rule": "Nach kurzem Vokal steht häufig ss, nach langem Vokal oder Diphthong häufig ß. Ein stimmhaftes s schreibt man meist s.",
+      "examples": [
+        "der Fluss",
+        "der Fuß",
+        "leise",
+        "weiß"
+      ],
+      "badge": "🏅 s-Laut-Meister"
+    },
+    {
+      "key": "grossschreibung",
+      "label": "Großschreibung & Nominalisierung",
+      "rule": "Nomen schreibt man groß. Auch Verben und Adjektive werden großgeschrieben, wenn sie als Nomen gebraucht werden: das Laufen, etwas Schönes.",
+      "examples": [
+        "der Hund",
+        "das Lesen",
+        "etwas Neues",
+        "beim Spielen"
+      ],
+      "badge": "🏅 Großschreib-Profi"
+    },
+    {
+      "key": "wortstamm",
+      "label": "Wortstamm & Ableitung",
+      "rule": "Wörter aus einer Wortfamilie helfen bei der Rechtschreibung. Man schreibt z. B. fährt wegen fahren und Häuser wegen Haus.",
+      "examples": [
+        "fahren → fährt",
+        "Haus → Häuser",
+        "Tag → täglich",
+        "Hand → Hände"
+      ],
+      "badge": "🏅 Wortfamilien-Experte"
+    }
+  ],
+  "tasks": [
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Der ___ rollt über den Hof.",
+      "options": [
+        "Ball",
+        "Bal"
+      ],
+      "correct": "Ball",
+      "explanation": "Nach kurzem a steht ll.",
+      "id": "doppelkonsonant_choice_001",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Der ",
+      "after": " rollt über den Hof.",
+      "options": [
+        "Ball",
+        "Bal",
+        "Baln"
+      ],
+      "correct": "Ball",
+      "explanation": "Nach kurzem a steht ll.",
+      "id": "doppelkonsonant_gap_002",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ scheint hell.",
+      "options": [
+        "Sonne",
+        "Sone"
+      ],
+      "correct": "Sonne",
+      "explanation": "Nach kurzem o steht nn.",
+      "id": "doppelkonsonant_choice_003",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " scheint hell.",
+      "options": [
+        "Sonne",
+        "Sone",
+        "Sonen"
+      ],
+      "correct": "Sonne",
+      "explanation": "Nach kurzem o steht nn.",
+      "id": "doppelkonsonant_gap_004",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Unsere ___ liest einen Text.",
+      "options": [
+        "Klasse",
+        "Klase"
+      ],
+      "correct": "Klasse",
+      "explanation": "Nach kurzem a steht ss.",
+      "id": "doppelkonsonant_choice_005",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Unsere ",
+      "after": " liest einen Text.",
+      "options": [
+        "Klasse",
+        "Klase",
+        "Klasen"
+      ],
+      "correct": "Klasse",
+      "explanation": "Nach kurzem a steht ss.",
+      "id": "doppelkonsonant_gap_006",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Wir ___ morgen früher.",
+      "options": [
+        "kommen",
+        "komen"
+      ],
+      "correct": "kommen",
+      "explanation": "Nach kurzem o steht mm.",
+      "id": "doppelkonsonant_choice_007",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Wir ",
+      "after": " morgen früher.",
+      "options": [
+        "kommen",
+        "komen",
+        "kome"
+      ],
+      "correct": "kommen",
+      "explanation": "Nach kurzem o steht mm.",
+      "id": "doppelkonsonant_gap_008",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die Kinder ___ schnell.",
+      "options": [
+        "rennen",
+        "renen"
+      ],
+      "correct": "rennen",
+      "explanation": "Nach kurzem e steht nn.",
+      "id": "doppelkonsonant_choice_009",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die Kinder ",
+      "after": " schnell.",
+      "options": [
+        "rennen",
+        "renen",
+        "rene"
+      ],
+      "correct": "rennen",
+      "explanation": "Nach kurzem e steht nn.",
+      "id": "doppelkonsonant_gap_010",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Meine ___ kocht Suppe.",
+      "options": [
+        "Mutter",
+        "Muter"
+      ],
+      "correct": "Mutter",
+      "explanation": "Nach kurzem u steht tt.",
+      "id": "doppelkonsonant_choice_011",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Meine ",
+      "after": " kocht Suppe.",
+      "options": [
+        "Mutter",
+        "Muter",
+        "Mutern"
+      ],
+      "correct": "Mutter",
+      "explanation": "Nach kurzem u steht tt.",
+      "id": "doppelkonsonant_gap_012",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Ich trinke ein Glas ___.",
+      "options": [
+        "Wasser",
+        "Waser"
+      ],
+      "correct": "Wasser",
+      "explanation": "Nach kurzem a steht ss.",
+      "id": "doppelkonsonant_choice_013",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Ich trinke ein Glas ",
+      "after": ".",
+      "options": [
+        "Wasser",
+        "Waser",
+        "Wasern"
+      ],
+      "correct": "Wasser",
+      "explanation": "Nach kurzem a steht ss.",
+      "id": "doppelkonsonant_gap_014",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ steht auf dem Tisch.",
+      "options": [
+        "Tasse",
+        "Tase"
+      ],
+      "correct": "Tasse",
+      "explanation": "Nach kurzem a steht ss.",
+      "id": "doppelkonsonant_choice_015",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " steht auf dem Tisch.",
+      "options": [
+        "Tasse",
+        "Tase",
+        "Tasen"
+      ],
+      "correct": "Tasse",
+      "explanation": "Nach kurzem a steht ss.",
+      "id": "doppelkonsonant_gap_016",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Am ___ ziehen Wolken.",
+      "options": [
+        "Himmel",
+        "Himel"
+      ],
+      "correct": "Himmel",
+      "explanation": "Nach kurzem i steht mm.",
+      "id": "doppelkonsonant_choice_017",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Am ",
+      "after": " ziehen Wolken.",
+      "options": [
+        "Himmel",
+        "Himel",
+        "Himeln"
+      ],
+      "correct": "Himmel",
+      "explanation": "Nach kurzem i steht mm.",
+      "id": "doppelkonsonant_gap_018",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Der ___ ist schwer.",
+      "options": [
+        "Koffer",
+        "Kofer"
+      ],
+      "correct": "Koffer",
+      "explanation": "Nach kurzem o steht ff.",
+      "id": "doppelkonsonant_choice_019",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Der ",
+      "after": " ist schwer.",
+      "options": [
+        "Koffer",
+        "Kofer",
+        "Kofern"
+      ],
+      "correct": "Koffer",
+      "explanation": "Nach kurzem o steht ff.",
+      "id": "doppelkonsonant_gap_020",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist weich.",
+      "options": [
+        "Bett",
+        "Bet"
+      ],
+      "correct": "Bett",
+      "explanation": "Nach kurzem e steht tt.",
+      "id": "doppelkonsonant_choice_021",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist weich.",
+      "options": [
+        "Bett",
+        "Bet",
+        "Betn"
+      ],
+      "correct": "Bett",
+      "explanation": "Nach kurzem e steht tt.",
+      "id": "doppelkonsonant_gap_022",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ fährt über den See.",
+      "options": [
+        "Schiff",
+        "Schif"
+      ],
+      "correct": "Schiff",
+      "explanation": "Nach kurzem i steht ff.",
+      "id": "doppelkonsonant_choice_023",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " fährt über den See.",
+      "options": [
+        "Schiff",
+        "Schif",
+        "Schifn"
+      ],
+      "correct": "Schiff",
+      "explanation": "Nach kurzem i steht ff.",
+      "id": "doppelkonsonant_gap_024",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist scharf.",
+      "options": [
+        "Messer",
+        "Meser"
+      ],
+      "correct": "Messer",
+      "explanation": "Nach kurzem e steht ss.",
+      "id": "doppelkonsonant_choice_025",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist scharf.",
+      "options": [
+        "Messer",
+        "Meser",
+        "Mesern"
+      ],
+      "correct": "Messer",
+      "explanation": "Nach kurzem e steht ss.",
+      "id": "doppelkonsonant_gap_026",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Der ___ liegt im Heft.",
+      "options": [
+        "Zettel",
+        "Zetel"
+      ],
+      "correct": "Zettel",
+      "explanation": "Nach kurzem e steht tt.",
+      "id": "doppelkonsonant_choice_027",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Der ",
+      "after": " liegt im Heft.",
+      "options": [
+        "Zettel",
+        "Zetel",
+        "Zeteln"
+      ],
+      "correct": "Zettel",
+      "explanation": "Nach kurzem e steht tt.",
+      "id": "doppelkonsonant_gap_028",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die Kerzen ___ hell.",
+      "options": [
+        "brennen",
+        "brenen"
+      ],
+      "correct": "brennen",
+      "explanation": "Nach kurzem e steht nn.",
+      "id": "doppelkonsonant_choice_029",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die Kerzen ",
+      "after": " hell.",
+      "options": [
+        "brennen",
+        "brenen",
+        "brene"
+      ],
+      "correct": "brennen",
+      "explanation": "Nach kurzem e steht nn.",
+      "id": "doppelkonsonant_gap_030",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Sortiere die Wörter.",
+      "groups": [
+        "Doppelkonsonant",
+        "kein Doppelkonsonant"
+      ],
+      "items": [
+        {
+          "text": "Ball",
+          "group": "Doppelkonsonant"
+        },
+        {
+          "text": "Hut",
+          "group": "kein Doppelkonsonant"
+        },
+        {
+          "text": "Sonne",
+          "group": "Doppelkonsonant"
+        },
+        {
+          "text": "Blume",
+          "group": "kein Doppelkonsonant"
+        },
+        {
+          "text": "Klasse",
+          "group": "Doppelkonsonant"
+        },
+        {
+          "text": "Rose",
+          "group": "kein Doppelkonsonant"
+        }
+      ],
+      "explanation": "Achte auf doppelte Konsonanten wie ll, nn, ss, mm, tt, ff.",
+      "id": "doppelkonsonant_sort_031",
+      "stage": "doppelkonsonant",
+      "type": "sort"
+    },
+    {
+      "prompt": "Sortiere die Wörter.",
+      "groups": [
+        "Doppelkonsonant",
+        "kein Doppelkonsonant"
+      ],
+      "items": [
+        {
+          "text": "rennen",
+          "group": "Doppelkonsonant"
+        },
+        {
+          "text": "gehen",
+          "group": "kein Doppelkonsonant"
+        },
+        {
+          "text": "kommen",
+          "group": "Doppelkonsonant"
+        },
+        {
+          "text": "malen",
+          "group": "kein Doppelkonsonant"
+        },
+        {
+          "text": "Bett",
+          "group": "Doppelkonsonant"
+        },
+        {
+          "text": "Brot",
+          "group": "kein Doppelkonsonant"
+        }
+      ],
+      "explanation": "Achte auf doppelte Konsonanten wie ll, nn, ss, mm, tt, ff.",
+      "id": "doppelkonsonant_sort_032",
+      "stage": "doppelkonsonant",
+      "type": "sort"
+    },
+    {
+      "prompt": "Sortiere die Wörter.",
+      "groups": [
+        "Doppelkonsonant",
+        "kein Doppelkonsonant"
+      ],
+      "items": [
+        {
+          "text": "Wasser",
+          "group": "Doppelkonsonant"
+        },
+        {
+          "text": "Hose",
+          "group": "kein Doppelkonsonant"
+        },
+        {
+          "text": "Koffer",
+          "group": "Doppelkonsonant"
+        },
+        {
+          "text": "Lampe",
+          "group": "kein Doppelkonsonant"
+        },
+        {
+          "text": "Schiff",
+          "group": "Doppelkonsonant"
+        },
+        {
+          "text": "Tisch",
+          "group": "kein Doppelkonsonant"
+        }
+      ],
+      "explanation": "Achte auf doppelte Konsonanten wie ll, nn, ss, mm, tt, ff.",
+      "id": "doppelkonsonant_sort_033",
+      "stage": "doppelkonsonant",
+      "type": "sort"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Wir ___ mit dem Bus.",
+      "options": [
+        "fahren",
+        "faren"
+      ],
+      "correct": "fahren",
+      "explanation": "fahren schreibt man mit Dehnungs-h.",
+      "id": "dehnung_choice_034",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Wir ",
+      "after": " mit dem Bus.",
+      "options": [
+        "fahren",
+        "faren",
+        "fahrene"
+      ],
+      "correct": "fahren",
+      "explanation": "fahren schreibt man mit Dehnungs-h.",
+      "id": "dehnung_gap_035",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die Kinder ___ nach Hause.",
+      "options": [
+        "gehen",
+        "geen"
+      ],
+      "correct": "gehen",
+      "explanation": "gehen schreibt man mit h.",
+      "id": "dehnung_choice_036",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die Kinder ",
+      "after": " nach Hause.",
+      "options": [
+        "gehen",
+        "geen",
+        "gehene"
+      ],
+      "correct": "gehen",
+      "explanation": "gehen schreibt man mit h.",
+      "id": "dehnung_gap_037",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Wir ___ Fußball.",
+      "options": [
+        "spielen",
+        "spilen"
+      ],
+      "correct": "spielen",
+      "explanation": "spielen schreibt man mit ie.",
+      "id": "dehnung_choice_038",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Wir ",
+      "after": " Fußball.",
+      "options": [
+        "spielen",
+        "spilen",
+        "spielene"
+      ],
+      "correct": "spielen",
+      "explanation": "spielen schreibt man mit ie.",
+      "id": "dehnung_gap_039",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Der ___ liegt im Fach.",
+      "options": [
+        "Brief",
+        "Brif"
+      ],
+      "correct": "Brief",
+      "explanation": "Brief schreibt man mit ie.",
+      "id": "dehnung_choice_040",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Der ",
+      "after": " liegt im Fach.",
+      "options": [
+        "Brief",
+        "Brif",
+        "Briefe"
+      ],
+      "correct": "Brief",
+      "explanation": "Brief schreibt man mit ie.",
+      "id": "dehnung_gap_041",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ fliegt zur Blume.",
+      "options": [
+        "Biene",
+        "Bine"
+      ],
+      "correct": "Biene",
+      "explanation": "Biene schreibt man mit ie.",
+      "id": "dehnung_choice_042",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " fliegt zur Blume.",
+      "options": [
+        "Biene",
+        "Bine",
+        "Bienee"
+      ],
+      "correct": "Biene",
+      "explanation": "Biene schreibt man mit ie.",
+      "id": "dehnung_gap_043",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Der ___ tut weh.",
+      "options": [
+        "Zahn",
+        "Zan"
+      ],
+      "correct": "Zahn",
+      "explanation": "Zahn schreibt man mit h.",
+      "id": "dehnung_choice_044",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Der ",
+      "after": " tut weh.",
+      "options": [
+        "Zahn",
+        "Zan",
+        "Zahne"
+      ],
+      "correct": "Zahn",
+      "explanation": "Zahn schreibt man mit h.",
+      "id": "dehnung_gap_045",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ kommt zu spät.",
+      "options": [
+        "Bahn",
+        "Ban"
+      ],
+      "correct": "Bahn",
+      "explanation": "Bahn schreibt man mit h.",
+      "id": "dehnung_choice_046",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " kommt zu spät.",
+      "options": [
+        "Bahn",
+        "Ban",
+        "Bahne"
+      ],
+      "correct": "Bahn",
+      "explanation": "Bahn schreibt man mit h.",
+      "id": "dehnung_gap_047",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Der ___ steht am Tisch.",
+      "options": [
+        "Stuhl",
+        "Stul"
+      ],
+      "correct": "Stuhl",
+      "explanation": "Stuhl schreibt man mit h.",
+      "id": "dehnung_choice_048",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Der ",
+      "after": " steht am Tisch.",
+      "options": [
+        "Stuhl",
+        "Stul",
+        "Stuhle"
+      ],
+      "correct": "Stuhl",
+      "explanation": "Stuhl schreibt man mit h.",
+      "id": "dehnung_gap_049",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Ich habe ___ gelernt.",
+      "options": [
+        "viel",
+        "vil"
+      ],
+      "correct": "viel",
+      "explanation": "viel schreibt man mit ie.",
+      "id": "dehnung_choice_050",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Ich habe ",
+      "after": " gelernt.",
+      "options": [
+        "viel",
+        "vil",
+        "viele"
+      ],
+      "correct": "viel",
+      "explanation": "viel schreibt man mit ie.",
+      "id": "dehnung_gap_051",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Wir ___ die Tür auf.",
+      "options": [
+        "ziehen",
+        "zihen"
+      ],
+      "correct": "ziehen",
+      "explanation": "ziehen schreibt man mit ie und h.",
+      "id": "dehnung_choice_052",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Wir ",
+      "after": " die Tür auf.",
+      "options": [
+        "ziehen",
+        "zihen",
+        "ziehene"
+      ],
+      "correct": "ziehen",
+      "explanation": "ziehen schreibt man mit ie und h.",
+      "id": "dehnung_gap_053",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Der ___ erklärt die Aufgabe.",
+      "options": [
+        "Lehrer",
+        "Lerer"
+      ],
+      "correct": "Lehrer",
+      "explanation": "Lehrer schreibt man mit h.",
+      "id": "dehnung_choice_054",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Der ",
+      "after": " erklärt die Aufgabe.",
+      "options": [
+        "Lehrer",
+        "Lerer",
+        "Lehrere"
+      ],
+      "correct": "Lehrer",
+      "explanation": "Lehrer schreibt man mit h.",
+      "id": "dehnung_gap_055",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ hängt an der Wand.",
+      "options": [
+        "Uhr",
+        "Ur"
+      ],
+      "correct": "Uhr",
+      "explanation": "Uhr schreibt man mit h.",
+      "id": "dehnung_choice_056",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " hängt an der Wand.",
+      "options": [
+        "Uhr",
+        "Ur",
+        "UHR"
+      ],
+      "correct": "Uhr",
+      "explanation": "Uhr schreibt man mit h.",
+      "id": "dehnung_gap_057",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ schläft.",
+      "options": [
+        "Tier",
+        "Tir"
+      ],
+      "correct": "Tier",
+      "explanation": "Tier schreibt man mit ie.",
+      "id": "dehnung_choice_058",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " schläft.",
+      "options": [
+        "Tier",
+        "Tir",
+        "Tiere"
+      ],
+      "correct": "Tier",
+      "explanation": "Tier schreibt man mit ie.",
+      "id": "dehnung_gap_059",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Ich komme ___ zurück.",
+      "options": [
+        "wieder",
+        "wider"
+      ],
+      "correct": "wieder",
+      "explanation": "wieder im Sinn von nochmals schreibt man mit ie.",
+      "id": "dehnung_choice_060",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Ich komme ",
+      "after": " zurück.",
+      "options": [
+        "wieder",
+        "wider",
+        "wiedere"
+      ],
+      "correct": "wieder",
+      "explanation": "wieder im Sinn von nochmals schreibt man mit ie.",
+      "id": "dehnung_gap_061",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Ich helfe ___.",
+      "options": [
+        "ihm",
+        "im"
+      ],
+      "correct": "ihm",
+      "explanation": "ihm als Pronomen schreibt man mit h.",
+      "id": "dehnung_choice_062",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Ich helfe ",
+      "after": ".",
+      "options": [
+        "ihm",
+        "im",
+        "IHM"
+      ],
+      "correct": "ihm",
+      "explanation": "ihm als Pronomen schreibt man mit h.",
+      "id": "dehnung_gap_063",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Sortiere die Wörter.",
+      "groups": [
+        "mit Dehnungszeichen",
+        "ohne Dehnungszeichen"
+      ],
+      "items": [
+        {
+          "text": "fahren",
+          "group": "mit Dehnungszeichen"
+        },
+        {
+          "text": "fallen",
+          "group": "ohne Dehnungszeichen"
+        },
+        {
+          "text": "gehen",
+          "group": "mit Dehnungszeichen"
+        },
+        {
+          "text": "geben",
+          "group": "ohne Dehnungszeichen"
+        },
+        {
+          "text": "Brief",
+          "group": "mit Dehnungszeichen"
+        },
+        {
+          "text": "Bett",
+          "group": "ohne Dehnungszeichen"
+        }
+      ],
+      "explanation": "Dehnungszeichen sind z. B. h oder ie.",
+      "id": "dehnung_sort_064",
+      "stage": "dehnung",
+      "type": "sort"
+    },
+    {
+      "prompt": "Sortiere die Wörter.",
+      "groups": [
+        "mit Dehnungszeichen",
+        "ohne Dehnungszeichen"
+      ],
+      "items": [
+        {
+          "text": "Bahn",
+          "group": "mit Dehnungszeichen"
+        },
+        {
+          "text": "Ball",
+          "group": "ohne Dehnungszeichen"
+        },
+        {
+          "text": "Biene",
+          "group": "mit Dehnungszeichen"
+        },
+        {
+          "text": "Birne",
+          "group": "ohne Dehnungszeichen"
+        },
+        {
+          "text": "Stuhl",
+          "group": "mit Dehnungszeichen"
+        },
+        {
+          "text": "Stift",
+          "group": "ohne Dehnungszeichen"
+        }
+      ],
+      "explanation": "Dehnungszeichen sind z. B. h oder ie.",
+      "id": "dehnung_sort_065",
+      "stage": "dehnung",
+      "type": "sort"
+    },
+    {
+      "prompt": "Sortiere die Wörter.",
+      "groups": [
+        "mit Dehnungszeichen",
+        "ohne Dehnungszeichen"
+      ],
+      "items": [
+        {
+          "text": "viel",
+          "group": "mit Dehnungszeichen"
+        },
+        {
+          "text": "voll",
+          "group": "ohne Dehnungszeichen"
+        },
+        {
+          "text": "ziehen",
+          "group": "mit Dehnungszeichen"
+        },
+        {
+          "text": "zählen",
+          "group": "mit Dehnungszeichen"
+        },
+        {
+          "text": "Uhr",
+          "group": "mit Dehnungszeichen"
+        },
+        {
+          "text": "und",
+          "group": "ohne Dehnungszeichen"
+        }
+      ],
+      "explanation": "Dehnungszeichen sind z. B. h oder ie.",
+      "id": "dehnung_sort_066",
+      "stage": "dehnung",
+      "type": "sort"
+    },
+    {
+      "prompt": "Wähle die richtige s-Schreibung.",
+      "sentence": "Der ___ ist breit.",
+      "options": [
+        "Fluss",
+        "Fluß"
+      ],
+      "correct": "Fluss",
+      "explanation": "Nach kurzem u schreibt man ss.",
+      "id": "s_laute_choice_067",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Der ",
+      "after": " ist breit.",
+      "options": [
+        "Fluss",
+        "Fluß",
+        "Fluß"
+      ],
+      "correct": "Fluss",
+      "explanation": "Nach kurzem u schreibt man ss.",
+      "id": "s_laute_gap_068",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige s-Schreibung.",
+      "sentence": "Mein ___ tut weh.",
+      "options": [
+        "Fuß",
+        "Fuss"
+      ],
+      "correct": "Fuß",
+      "explanation": "Nach langem u schreibt man ß.",
+      "id": "s_laute_choice_069",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Mein ",
+      "after": " tut weh.",
+      "options": [
+        "Fuß",
+        "Fuss",
+        "Fuss"
+      ],
+      "correct": "Fuß",
+      "explanation": "Nach langem u schreibt man ß.",
+      "id": "s_laute_gap_070",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige s-Schreibung.",
+      "sentence": "Ich ___ die Antwort.",
+      "options": [
+        "weiß",
+        "weiss"
+      ],
+      "correct": "weiß",
+      "explanation": "Nach ei steht ß.",
+      "id": "s_laute_choice_071",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Ich ",
+      "after": " die Antwort.",
+      "options": [
+        "weiß",
+        "weiss",
+        "weiss"
+      ],
+      "correct": "weiß",
+      "explanation": "Nach ei steht ß.",
+      "id": "s_laute_gap_072",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige s-Schreibung.",
+      "sentence": "Ich ___ lernen.",
+      "options": [
+        "muss",
+        "muß"
+      ],
+      "correct": "muss",
+      "explanation": "Nach kurzem u schreibt man ss.",
+      "id": "s_laute_choice_073",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Ich ",
+      "after": " lernen.",
+      "options": [
+        "muss",
+        "muß",
+        "muß"
+      ],
+      "correct": "muss",
+      "explanation": "Nach kurzem u schreibt man ss.",
+      "id": "s_laute_gap_074",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige s-Schreibung.",
+      "sentence": "Die ___ ist lang.",
+      "options": [
+        "Straße",
+        "Strasse"
+      ],
+      "correct": "Straße",
+      "explanation": "Nach langem a schreibt man ß.",
+      "id": "s_laute_choice_075",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist lang.",
+      "options": [
+        "Straße",
+        "Strasse",
+        "Strasse"
+      ],
+      "correct": "Straße",
+      "explanation": "Nach langem a schreibt man ß.",
+      "id": "s_laute_gap_076",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige s-Schreibung.",
+      "sentence": "Die ___ ist voll.",
+      "options": [
+        "Tasse",
+        "Taße"
+      ],
+      "correct": "Tasse",
+      "explanation": "Nach kurzem a schreibt man ss.",
+      "id": "s_laute_choice_077",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist voll.",
+      "options": [
+        "Tasse",
+        "Taße",
+        "Taße"
+      ],
+      "correct": "Tasse",
+      "explanation": "Nach kurzem a schreibt man ss.",
+      "id": "s_laute_gap_078",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige s-Schreibung.",
+      "sentence": "Bitte sei ___.",
+      "options": [
+        "leise",
+        "leiße"
+      ],
+      "correct": "leise",
+      "explanation": "Das stimmhafte s schreibt man s.",
+      "id": "s_laute_choice_079",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Bitte sei ",
+      "after": ".",
+      "options": [
+        "leise",
+        "leiße",
+        "leise"
+      ],
+      "correct": "leise",
+      "explanation": "Das stimmhafte s schreibt man s.",
+      "id": "s_laute_gap_080",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige s-Schreibung.",
+      "sentence": "Der Hund ist ___.",
+      "options": [
+        "groß",
+        "gross"
+      ],
+      "correct": "groß",
+      "explanation": "Nach langem o schreibt man ß.",
+      "id": "s_laute_choice_081",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Der Hund ist ",
+      "after": ".",
+      "options": [
+        "groß",
+        "gross",
+        "gross"
+      ],
+      "correct": "groß",
+      "explanation": "Nach langem o schreibt man ß.",
+      "id": "s_laute_gap_082",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige s-Schreibung.",
+      "sentence": "Das ___ ist alt.",
+      "options": [
+        "Schloss",
+        "Schloß"
+      ],
+      "correct": "Schloss",
+      "explanation": "Nach kurzem o schreibt man ss.",
+      "id": "s_laute_choice_083",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist alt.",
+      "options": [
+        "Schloss",
+        "Schloß",
+        "Schloß"
+      ],
+      "correct": "Schloss",
+      "explanation": "Nach kurzem o schreibt man ss.",
+      "id": "s_laute_gap_084",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige s-Schreibung.",
+      "sentence": "Wir spielen ___.",
+      "options": [
+        "draußen",
+        "draussen"
+      ],
+      "correct": "draußen",
+      "explanation": "Nach au steht ß.",
+      "id": "s_laute_choice_085",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Wir spielen ",
+      "after": ".",
+      "options": [
+        "draußen",
+        "draussen",
+        "draussen"
+      ],
+      "correct": "draußen",
+      "explanation": "Nach au steht ß.",
+      "id": "s_laute_gap_086",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige s-Schreibung.",
+      "sentence": "Heute geht es mir ___.",
+      "options": [
+        "besser",
+        "beßer"
+      ],
+      "correct": "besser",
+      "explanation": "Nach kurzem e steht ss.",
+      "id": "s_laute_choice_087",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Heute geht es mir ",
+      "after": ".",
+      "options": [
+        "besser",
+        "beßer",
+        "beßer"
+      ],
+      "correct": "besser",
+      "explanation": "Nach kurzem e steht ss.",
+      "id": "s_laute_gap_088",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige s-Schreibung.",
+      "sentence": "Der Kuchen ist ___.",
+      "options": [
+        "süß",
+        "süss"
+      ],
+      "correct": "süß",
+      "explanation": "Nach langem ü steht ß.",
+      "id": "s_laute_choice_089",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Der Kuchen ist ",
+      "after": ".",
+      "options": [
+        "süß",
+        "süss",
+        "süss"
+      ],
+      "correct": "süß",
+      "explanation": "Nach langem ü steht ß.",
+      "id": "s_laute_gap_090",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige s-Schreibung.",
+      "sentence": "Wir ___ das Fenster offen.",
+      "options": [
+        "lassen",
+        "laßen"
+      ],
+      "correct": "lassen",
+      "explanation": "Nach kurzem a steht ss.",
+      "id": "s_laute_choice_091",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Wir ",
+      "after": " das Fenster offen.",
+      "options": [
+        "lassen",
+        "laßen",
+        "laßen"
+      ],
+      "correct": "lassen",
+      "explanation": "Nach kurzem a steht ss.",
+      "id": "s_laute_gap_092",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige s-Schreibung.",
+      "sentence": "Wie soll das Wort ___?",
+      "options": [
+        "heißen",
+        "heissen"
+      ],
+      "correct": "heißen",
+      "explanation": "Nach ei steht ß.",
+      "id": "s_laute_choice_093",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Wie soll das Wort ",
+      "after": "?",
+      "options": [
+        "heißen",
+        "heissen",
+        "heissen"
+      ],
+      "correct": "heißen",
+      "explanation": "Nach ei steht ß.",
+      "id": "s_laute_gap_094",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige s-Schreibung.",
+      "sentence": "Der ___ ist kurz.",
+      "options": [
+        "Kuss",
+        "Kuß"
+      ],
+      "correct": "Kuss",
+      "explanation": "Nach kurzem u steht ss.",
+      "id": "s_laute_choice_095",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Der ",
+      "after": " ist kurz.",
+      "options": [
+        "Kuss",
+        "Kuß",
+        "Kuß"
+      ],
+      "correct": "Kuss",
+      "explanation": "Nach kurzem u steht ss.",
+      "id": "s_laute_gap_096",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Sortiere nach s-Schreibung.",
+      "groups": [
+        "s",
+        "ss",
+        "ß"
+      ],
+      "items": [
+        {
+          "text": "Fluss",
+          "group": "ss"
+        },
+        {
+          "text": "Fuß",
+          "group": "ß"
+        },
+        {
+          "text": "muss",
+          "group": "ss"
+        },
+        {
+          "text": "weiß",
+          "group": "ß"
+        },
+        {
+          "text": "leise",
+          "group": "s"
+        },
+        {
+          "text": "Straße",
+          "group": "ß"
+        }
+      ],
+      "explanation": "Entscheide, ob s, ss oder ß geschrieben wird.",
+      "id": "s_laute_sort_097",
+      "stage": "s_laute",
+      "type": "sort"
+    },
+    {
+      "prompt": "Sortiere nach s-Schreibung.",
+      "groups": [
+        "s",
+        "ss",
+        "ß"
+      ],
+      "items": [
+        {
+          "text": "Tasse",
+          "group": "ss"
+        },
+        {
+          "text": "groß",
+          "group": "ß"
+        },
+        {
+          "text": "Schloss",
+          "group": "ss"
+        },
+        {
+          "text": "draußen",
+          "group": "ß"
+        },
+        {
+          "text": "besser",
+          "group": "ss"
+        },
+        {
+          "text": "süß",
+          "group": "ß"
+        }
+      ],
+      "explanation": "Entscheide, ob s, ss oder ß geschrieben wird.",
+      "id": "s_laute_sort_098",
+      "stage": "s_laute",
+      "type": "sort"
+    },
+    {
+      "prompt": "Sortiere nach s-Schreibung.",
+      "groups": [
+        "s",
+        "ss",
+        "ß"
+      ],
+      "items": [
+        {
+          "text": "lassen",
+          "group": "ss"
+        },
+        {
+          "text": "heißen",
+          "group": "ß"
+        },
+        {
+          "text": "Kuss",
+          "group": "ss"
+        },
+        {
+          "text": "Rose",
+          "group": "s"
+        },
+        {
+          "text": "Bus",
+          "group": "s"
+        },
+        {
+          "text": "Maß",
+          "group": "ß"
+        }
+      ],
+      "explanation": "Entscheide, ob s, ss oder ß geschrieben wird.",
+      "id": "s_laute_sort_099",
+      "stage": "s_laute",
+      "type": "sort"
+    },
+    {
+      "prompt": "Wähle die richtige Groß- oder Kleinschreibung.",
+      "sentence": "Das ___ macht mir Spaß.",
+      "options": [
+        "Lesen",
+        "lesen"
+      ],
+      "correct": "Lesen",
+      "explanation": "Nach dem Artikel das wird das Verb nominalisiert und großgeschrieben.",
+      "id": "grossschreibung_choice_100",
+      "stage": "grossschreibung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige Schreibweise ein.",
+      "before": "Das ",
+      "after": " macht mir Spaß.",
+      "options": [
+        "Lesen",
+        "lesen"
+      ],
+      "correct": "Lesen",
+      "explanation": "Nach dem Artikel das wird das Verb nominalisiert und großgeschrieben.",
+      "id": "grossschreibung_gap_101",
+      "stage": "grossschreibung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Groß- oder Kleinschreibung.",
+      "sentence": "Sie sucht etwas ___.",
+      "options": [
+        "Schöne",
+        "schöne"
+      ],
+      "correct": "Schöne",
+      "explanation": "Nach etwas wird das Adjektiv nominalisiert und großgeschrieben.",
+      "id": "grossschreibung_choice_102",
+      "stage": "grossschreibung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige Schreibweise ein.",
+      "before": "Sie sucht etwas ",
+      "after": ".",
+      "options": [
+        "Schöne",
+        "schöne"
+      ],
+      "correct": "Schöne",
+      "explanation": "Nach etwas wird das Adjektiv nominalisiert und großgeschrieben.",
+      "id": "grossschreibung_gap_103",
+      "stage": "grossschreibung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Groß- oder Kleinschreibung.",
+      "sentence": "Beim ___ lachen wir viel.",
+      "options": [
+        "Spielen",
+        "spielen"
+      ],
+      "correct": "Spielen",
+      "explanation": "Nach beim wird das Verb nominalisiert.",
+      "id": "grossschreibung_choice_104",
+      "stage": "grossschreibung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige Schreibweise ein.",
+      "before": "Beim ",
+      "after": " lachen wir viel.",
+      "options": [
+        "Spielen",
+        "spielen"
+      ],
+      "correct": "Spielen",
+      "explanation": "Nach beim wird das Verb nominalisiert.",
+      "id": "grossschreibung_gap_105",
+      "stage": "grossschreibung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Groß- oder Kleinschreibung.",
+      "sentence": "Ich wünsche dir alles ___.",
+      "options": [
+        "Gute",
+        "gute"
+      ],
+      "correct": "Gute",
+      "explanation": "Nach alles wird das Adjektiv nominalisiert.",
+      "id": "grossschreibung_choice_106",
+      "stage": "grossschreibung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige Schreibweise ein.",
+      "before": "Ich wünsche dir alles ",
+      "after": ".",
+      "options": [
+        "Gute",
+        "gute"
+      ],
+      "correct": "Gute",
+      "explanation": "Nach alles wird das Adjektiv nominalisiert.",
+      "id": "grossschreibung_gap_107",
+      "stage": "grossschreibung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Groß- oder Kleinschreibung.",
+      "sentence": "Das ___ ist gesund.",
+      "options": [
+        "Laufen",
+        "laufen"
+      ],
+      "correct": "Laufen",
+      "explanation": "Nach das wird das Verb nominalisiert.",
+      "id": "grossschreibung_choice_108",
+      "stage": "grossschreibung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige Schreibweise ein.",
+      "before": "Das ",
+      "after": " ist gesund.",
+      "options": [
+        "Laufen",
+        "laufen"
+      ],
+      "correct": "Laufen",
+      "explanation": "Nach das wird das Verb nominalisiert.",
+      "id": "grossschreibung_gap_109",
+      "stage": "grossschreibung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Groß- oder Kleinschreibung.",
+      "sentence": "Wir lernen heute etwas ___.",
+      "options": [
+        "Neue",
+        "neue"
+      ],
+      "correct": "Neue",
+      "explanation": "Nach etwas wird das Adjektiv nominalisiert.",
+      "id": "grossschreibung_choice_110",
+      "stage": "grossschreibung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige Schreibweise ein.",
+      "before": "Wir lernen heute etwas ",
+      "after": ".",
+      "options": [
+        "Neue",
+        "neue"
+      ],
+      "correct": "Neue",
+      "explanation": "Nach etwas wird das Adjektiv nominalisiert.",
+      "id": "grossschreibung_gap_111",
+      "stage": "grossschreibung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Groß- oder Kleinschreibung.",
+      "sentence": "Am ___ fahren wir los.",
+      "options": [
+        "Morgen",
+        "morgen"
+      ],
+      "correct": "Morgen",
+      "explanation": "Am kann ein Nomensignal sein: der Morgen.",
+      "id": "grossschreibung_choice_112",
+      "stage": "grossschreibung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige Schreibweise ein.",
+      "before": "Am ",
+      "after": " fahren wir los.",
+      "options": [
+        "Morgen",
+        "morgen"
+      ],
+      "correct": "Morgen",
+      "explanation": "Am kann ein Nomensignal sein: der Morgen.",
+      "id": "grossschreibung_gap_113",
+      "stage": "grossschreibung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Groß- oder Kleinschreibung.",
+      "sentence": "Zum ___ brauche ich einen Stift.",
+      "options": [
+        "Schreiben",
+        "schreiben"
+      ],
+      "correct": "Schreiben",
+      "explanation": "Zum ist ein Nomensignal.",
+      "id": "grossschreibung_choice_114",
+      "stage": "grossschreibung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige Schreibweise ein.",
+      "before": "Zum ",
+      "after": " brauche ich einen Stift.",
+      "options": [
+        "Schreiben",
+        "schreiben"
+      ],
+      "correct": "Schreiben",
+      "explanation": "Zum ist ein Nomensignal.",
+      "id": "grossschreibung_gap_115",
+      "stage": "grossschreibung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Groß- oder Kleinschreibung.",
+      "sentence": "Er gibt sein ___.",
+      "options": [
+        "Beste",
+        "beste"
+      ],
+      "correct": "Beste",
+      "explanation": "sein Bestes wird großgeschrieben.",
+      "id": "grossschreibung_choice_116",
+      "stage": "grossschreibung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige Schreibweise ein.",
+      "before": "Er gibt sein ",
+      "after": ".",
+      "options": [
+        "Beste",
+        "beste"
+      ],
+      "correct": "Beste",
+      "explanation": "sein Bestes wird großgeschrieben.",
+      "id": "grossschreibung_gap_117",
+      "stage": "grossschreibung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Groß- oder Kleinschreibung.",
+      "sentence": "Beim ___ wird man nass.",
+      "options": [
+        "Schwimmen",
+        "schwimmen"
+      ],
+      "correct": "Schwimmen",
+      "explanation": "Beim ist ein Nomensignal.",
+      "id": "grossschreibung_choice_118",
+      "stage": "grossschreibung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige Schreibweise ein.",
+      "before": "Beim ",
+      "after": " wird man nass.",
+      "options": [
+        "Schwimmen",
+        "schwimmen"
+      ],
+      "correct": "Schwimmen",
+      "explanation": "Beim ist ein Nomensignal.",
+      "id": "grossschreibung_gap_119",
+      "stage": "grossschreibung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Groß- oder Kleinschreibung.",
+      "sentence": "Das ___ bleibt erhalten.",
+      "options": [
+        "Alte",
+        "alte"
+      ],
+      "correct": "Alte",
+      "explanation": "Das Alte ist nominalisiert.",
+      "id": "grossschreibung_choice_120",
+      "stage": "grossschreibung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige Schreibweise ein.",
+      "before": "Das ",
+      "after": " bleibt erhalten.",
+      "options": [
+        "Alte",
+        "alte"
+      ],
+      "correct": "Alte",
+      "explanation": "Das Alte ist nominalisiert.",
+      "id": "grossschreibung_gap_121",
+      "stage": "grossschreibung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Groß- oder Kleinschreibung.",
+      "sentence": "Wir lernen ___.",
+      "options": [
+        "Deutsch",
+        "deutsch"
+      ],
+      "correct": "Deutsch",
+      "explanation": "Schulfächer und Sprachen werden großgeschrieben.",
+      "id": "grossschreibung_choice_122",
+      "stage": "grossschreibung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige Schreibweise ein.",
+      "before": "Wir lernen ",
+      "after": ".",
+      "options": [
+        "Deutsch",
+        "deutsch"
+      ],
+      "correct": "Deutsch",
+      "explanation": "Schulfächer und Sprachen werden großgeschrieben.",
+      "id": "grossschreibung_gap_123",
+      "stage": "grossschreibung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Groß- oder Kleinschreibung.",
+      "sentence": "Ich habe ___.",
+      "options": [
+        "Angst",
+        "angst"
+      ],
+      "correct": "Angst",
+      "explanation": "Nomen schreibt man groß.",
+      "id": "grossschreibung_choice_124",
+      "stage": "grossschreibung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige Schreibweise ein.",
+      "before": "Ich habe ",
+      "after": ".",
+      "options": [
+        "Angst",
+        "angst"
+      ],
+      "correct": "Angst",
+      "explanation": "Nomen schreibt man groß.",
+      "id": "grossschreibung_gap_125",
+      "stage": "grossschreibung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Groß- oder Kleinschreibung.",
+      "sentence": "Sie zeigt große ___.",
+      "options": [
+        "Freude",
+        "freude"
+      ],
+      "correct": "Freude",
+      "explanation": "Nomen schreibt man groß.",
+      "id": "grossschreibung_choice_126",
+      "stage": "grossschreibung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige Schreibweise ein.",
+      "before": "Sie zeigt große ",
+      "after": ".",
+      "options": [
+        "Freude",
+        "freude"
+      ],
+      "correct": "Freude",
+      "explanation": "Nomen schreibt man groß.",
+      "id": "grossschreibung_gap_127",
+      "stage": "grossschreibung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Groß- oder Kleinschreibung.",
+      "sentence": "Das ___ klingt schön.",
+      "options": [
+        "Singen",
+        "singen"
+      ],
+      "correct": "Singen",
+      "explanation": "Das Verb wird durch den Artikel nominalisiert.",
+      "id": "grossschreibung_choice_128",
+      "stage": "grossschreibung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige Schreibweise ein.",
+      "before": "Das ",
+      "after": " klingt schön.",
+      "options": [
+        "Singen",
+        "singen"
+      ],
+      "correct": "Singen",
+      "explanation": "Das Verb wird durch den Artikel nominalisiert.",
+      "id": "grossschreibung_gap_129",
+      "stage": "grossschreibung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Sortiere: Muss das markierte Wort großgeschrieben werden?",
+      "groups": [
+        "großschreiben",
+        "kleinschreiben"
+      ],
+      "items": [
+        {
+          "text": "das Lesen",
+          "group": "großschreiben"
+        },
+        {
+          "text": "laut lesen",
+          "group": "kleinschreiben"
+        },
+        {
+          "text": "etwas Schönes",
+          "group": "großschreiben"
+        },
+        {
+          "text": "schöne Blumen",
+          "group": "kleinschreiben"
+        },
+        {
+          "text": "beim Spielen",
+          "group": "großschreiben"
+        },
+        {
+          "text": "wir spielen",
+          "group": "kleinschreiben"
+        }
+      ],
+      "explanation": "Achte auf Artikel und Signalwörter wie das, beim, zum, etwas, alles.",
+      "id": "grossschreibung_sort_130",
+      "stage": "grossschreibung",
+      "type": "sort"
+    },
+    {
+      "prompt": "Sortiere: Muss das markierte Wort großgeschrieben werden?",
+      "groups": [
+        "großschreiben",
+        "kleinschreiben"
+      ],
+      "items": [
+        {
+          "text": "alles Gute",
+          "group": "großschreiben"
+        },
+        {
+          "text": "gute Idee",
+          "group": "kleinschreiben"
+        },
+        {
+          "text": "zum Schreiben",
+          "group": "großschreiben"
+        },
+        {
+          "text": "ich schreibe",
+          "group": "kleinschreiben"
+        },
+        {
+          "text": "das Laufen",
+          "group": "großschreiben"
+        },
+        {
+          "text": "wir laufen",
+          "group": "kleinschreiben"
+        }
+      ],
+      "explanation": "Achte auf Artikel und Signalwörter wie das, beim, zum, etwas, alles.",
+      "id": "grossschreibung_sort_131",
+      "stage": "grossschreibung",
+      "type": "sort"
+    },
+    {
+      "prompt": "Sortiere: Muss das markierte Wort großgeschrieben werden?",
+      "groups": [
+        "großschreiben",
+        "kleinschreiben"
+      ],
+      "items": [
+        {
+          "text": "die Freude",
+          "group": "großschreiben"
+        },
+        {
+          "text": "frohe Kinder",
+          "group": "kleinschreiben"
+        },
+        {
+          "text": "das Alte",
+          "group": "großschreiben"
+        },
+        {
+          "text": "alte Bücher",
+          "group": "kleinschreiben"
+        },
+        {
+          "text": "Deutsch",
+          "group": "großschreiben"
+        },
+        {
+          "text": "deutsch sprechen",
+          "group": "kleinschreiben"
+        }
+      ],
+      "explanation": "Achte auf Artikel und Signalwörter wie das, beim, zum, etwas, alles.",
+      "id": "grossschreibung_sort_132",
+      "stage": "grossschreibung",
+      "type": "sort"
+    },
+    {
+      "prompt": "Nutze die Wortfamilie und wähle richtig.",
+      "sentence": "Er ___ mit dem Fahrrad.",
+      "options": [
+        "fährt",
+        "fert"
+      ],
+      "correct": "fährt",
+      "explanation": "fährt gehört zu fahren: deshalb ä und h.",
+      "id": "wortstamm_choice_133",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Er ",
+      "after": " mit dem Fahrrad.",
+      "options": [
+        "fährt",
+        "fert"
+      ],
+      "correct": "fährt",
+      "explanation": "fährt gehört zu fahren: deshalb ä und h.",
+      "id": "wortstamm_gap_134",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Nutze die Wortfamilie und wähle richtig.",
+      "sentence": "Viele ___ stehen in der Straße.",
+      "options": [
+        "Häuser",
+        "Heuser"
+      ],
+      "correct": "Häuser",
+      "explanation": "Häuser kommt von Haus: au wird zu äu.",
+      "id": "wortstamm_choice_135",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Viele ",
+      "after": " stehen in der Straße.",
+      "options": [
+        "Häuser",
+        "Heuser"
+      ],
+      "correct": "Häuser",
+      "explanation": "Häuser kommt von Haus: au wird zu äu.",
+      "id": "wortstamm_gap_136",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Nutze die Wortfamilie und wähle richtig.",
+      "sentence": "Die ___ sind hoch.",
+      "options": [
+        "Bäume",
+        "Beume"
+      ],
+      "correct": "Bäume",
+      "explanation": "Bäume kommt von Baum: au wird zu äu.",
+      "id": "wortstamm_choice_137",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Die ",
+      "after": " sind hoch.",
+      "options": [
+        "Bäume",
+        "Beume"
+      ],
+      "correct": "Bäume",
+      "explanation": "Bäume kommt von Baum: au wird zu äu.",
+      "id": "wortstamm_gap_138",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Nutze die Wortfamilie und wähle richtig.",
+      "sentence": "Wir üben ___.",
+      "options": [
+        "täglich",
+        "tegliche"
+      ],
+      "correct": "täglich",
+      "explanation": "täglich kommt von Tag: deshalb ä.",
+      "id": "wortstamm_choice_139",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Wir üben ",
+      "after": ".",
+      "options": [
+        "täglich",
+        "tegliche"
+      ],
+      "correct": "täglich",
+      "explanation": "täglich kommt von Tag: deshalb ä.",
+      "id": "wortstamm_gap_140",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Nutze die Wortfamilie und wähle richtig.",
+      "sentence": "Meine ___ sind kalt.",
+      "options": [
+        "Hände",
+        "Hende"
+      ],
+      "correct": "Hände",
+      "explanation": "Hände kommt von Hand: deshalb ä.",
+      "id": "wortstamm_choice_141",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Meine ",
+      "after": " sind kalt.",
+      "options": [
+        "Hände",
+        "Hende"
+      ],
+      "correct": "Hände",
+      "explanation": "Hände kommt von Hand: deshalb ä.",
+      "id": "wortstamm_gap_142",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Nutze die Wortfamilie und wähle richtig.",
+      "sentence": "Der Hund ___.",
+      "options": [
+        "läuft",
+        "leuft"
+      ],
+      "correct": "läuft",
+      "explanation": "läuft kommt von laufen: au wird zu äu.",
+      "id": "wortstamm_choice_143",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Der Hund ",
+      "after": ".",
+      "options": [
+        "läuft",
+        "leuft"
+      ],
+      "correct": "läuft",
+      "explanation": "läuft kommt von laufen: au wird zu äu.",
+      "id": "wortstamm_gap_144",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Nutze die Wortfamilie und wähle richtig.",
+      "sentence": "Sie ___ eine Tasche.",
+      "options": [
+        "trägt",
+        "tregt"
+      ],
+      "correct": "trägt",
+      "explanation": "trägt kommt von tragen: deshalb ä.",
+      "id": "wortstamm_choice_145",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Sie ",
+      "after": " eine Tasche.",
+      "options": [
+        "trägt",
+        "tregt"
+      ],
+      "correct": "trägt",
+      "explanation": "trägt kommt von tragen: deshalb ä.",
+      "id": "wortstamm_gap_146",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Nutze die Wortfamilie und wähle richtig.",
+      "sentence": "Der Junge ist ___.",
+      "options": [
+        "kräftig",
+        "kreftig"
+      ],
+      "correct": "kräftig",
+      "explanation": "kräftig gehört zu Kraft: a wird zu ä.",
+      "id": "wortstamm_choice_147",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Der Junge ist ",
+      "after": ".",
+      "options": [
+        "kräftig",
+        "kreftig"
+      ],
+      "correct": "kräftig",
+      "explanation": "kräftig gehört zu Kraft: a wird zu ä.",
+      "id": "wortstamm_gap_148",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Nutze die Wortfamilie und wähle richtig.",
+      "sentence": "Die ___ stehen im Schrank.",
+      "options": [
+        "Gläser",
+        "Gleser"
+      ],
+      "correct": "Gläser",
+      "explanation": "Gläser kommt von Glas: a wird zu ä.",
+      "id": "wortstamm_choice_149",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Die ",
+      "after": " stehen im Schrank.",
+      "options": [
+        "Gläser",
+        "Gleser"
+      ],
+      "correct": "Gläser",
+      "explanation": "Gläser kommt von Glas: a wird zu ä.",
+      "id": "wortstamm_gap_150",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Nutze die Wortfamilie und wähle richtig.",
+      "sentence": "Heute ist es ___.",
+      "options": [
+        "kälter",
+        "kelter"
+      ],
+      "correct": "kälter",
+      "explanation": "kälter kommt von kalt: a wird zu ä.",
+      "id": "wortstamm_choice_151",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Heute ist es ",
+      "after": ".",
+      "options": [
+        "kälter",
+        "kelter"
+      ],
+      "correct": "kälter",
+      "explanation": "kälter kommt von kalt: a wird zu ä.",
+      "id": "wortstamm_gap_152",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Nutze die Wortfamilie und wähle richtig.",
+      "sentence": "Das Kind ___.",
+      "options": [
+        "schläft",
+        "schleft"
+      ],
+      "correct": "schläft",
+      "explanation": "schläft kommt von schlafen: a wird zu ä.",
+      "id": "wortstamm_choice_153",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Das Kind ",
+      "after": ".",
+      "options": [
+        "schläft",
+        "schleft"
+      ],
+      "correct": "schläft",
+      "explanation": "schläft kommt von schlafen: a wird zu ä.",
+      "id": "wortstamm_gap_154",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Nutze die Wortfamilie und wähle richtig.",
+      "sentence": "Die ___ sind grün.",
+      "options": [
+        "Wälder",
+        "Welder"
+      ],
+      "correct": "Wälder",
+      "explanation": "Wälder kommt von Wald: a wird zu ä.",
+      "id": "wortstamm_choice_155",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Die ",
+      "after": " sind grün.",
+      "options": [
+        "Wälder",
+        "Welder"
+      ],
+      "correct": "Wälder",
+      "explanation": "Wälder kommt von Wald: a wird zu ä.",
+      "id": "wortstamm_gap_156",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Nutze die Wortfamilie und wähle richtig.",
+      "sentence": "Die ___ drehen sich.",
+      "options": [
+        "Räder",
+        "Reder"
+      ],
+      "correct": "Räder",
+      "explanation": "Räder kommt von Rad: a wird zu ä.",
+      "id": "wortstamm_choice_157",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Die ",
+      "after": " drehen sich.",
+      "options": [
+        "Räder",
+        "Reder"
+      ],
+      "correct": "Räder",
+      "explanation": "Räder kommt von Rad: a wird zu ä.",
+      "id": "wortstamm_gap_158",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Nutze die Wortfamilie und wähle richtig.",
+      "sentence": "Die ___ laufen schnell.",
+      "options": [
+        "Mäuse",
+        "Meuse"
+      ],
+      "correct": "Mäuse",
+      "explanation": "Mäuse kommt von Maus: au wird zu äu.",
+      "id": "wortstamm_choice_159",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Die ",
+      "after": " laufen schnell.",
+      "options": [
+        "Mäuse",
+        "Meuse"
+      ],
+      "correct": "Mäuse",
+      "explanation": "Mäuse kommt von Maus: au wird zu äu.",
+      "id": "wortstamm_gap_160",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Nutze die Wortfamilie und wähle richtig.",
+      "sentence": "Sie ___ die Punkte.",
+      "options": [
+        "zählt",
+        "zelt"
+      ],
+      "correct": "zählt",
+      "explanation": "zählt gehört zu Zahl: deshalb ä und h.",
+      "id": "wortstamm_choice_161",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Sie ",
+      "after": " die Punkte.",
+      "options": [
+        "zählt",
+        "zelt"
+      ],
+      "correct": "zählt",
+      "explanation": "zählt gehört zu Zahl: deshalb ä und h.",
+      "id": "wortstamm_gap_162",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Welche Schreibweise lässt sich durch die Wortfamilie erklären?",
+      "groups": [
+        "ableitbar",
+        "nicht passend"
+      ],
+      "items": [
+        {
+          "text": "fährt → fahren",
+          "group": "ableitbar"
+        },
+        {
+          "text": "fert → fern",
+          "group": "nicht passend"
+        },
+        {
+          "text": "Häuser → Haus",
+          "group": "ableitbar"
+        },
+        {
+          "text": "Heuser → heute",
+          "group": "ableitbar"
+        },
+        {
+          "text": "Bäume → Baum",
+          "group": "ableitbar"
+        },
+        {
+          "text": "Beume → Beule",
+          "group": "ableitbar"
+        }
+      ],
+      "explanation": "Suche das verwandte Grundwort: Haus → Häuser, fahren → fährt.",
+      "id": "wortstamm_sort_163",
+      "stage": "wortstamm",
+      "type": "sort"
+    },
+    {
+      "prompt": "Welche Schreibweise lässt sich durch die Wortfamilie erklären?",
+      "groups": [
+        "ableitbar",
+        "nicht passend"
+      ],
+      "items": [
+        {
+          "text": "Hände → Hand",
+          "group": "ableitbar"
+        },
+        {
+          "text": "läuft → laufen",
+          "group": "ableitbar"
+        },
+        {
+          "text": "trägt → tragen",
+          "group": "ableitbar"
+        },
+        {
+          "text": "kälter → kalt",
+          "group": "ableitbar"
+        },
+        {
+          "text": "Räder → Rad",
+          "group": "ableitbar"
+        },
+        {
+          "text": "zählt → Zahl",
+          "group": "ableitbar"
+        }
+      ],
+      "explanation": "Suche das verwandte Grundwort: Haus → Häuser, fahren → fährt.",
+      "id": "wortstamm_sort_164",
+      "stage": "wortstamm",
+      "type": "sort"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Der",
+        "Bal",
+        "rollt",
+        "weg",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "Ball",
+      "explanation": "Richtig ist: Ball.",
+      "id": "doppelkonsonant_mark_165",
+      "stage": "doppelkonsonant",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Die",
+        "Sone",
+        "scheint",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "Sonne",
+      "explanation": "Richtig ist: Sonne.",
+      "id": "doppelkonsonant_mark_166",
+      "stage": "doppelkonsonant",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Wir",
+        "komen",
+        "morgen",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "kommen",
+      "explanation": "Richtig ist: kommen.",
+      "id": "doppelkonsonant_mark_167",
+      "stage": "doppelkonsonant",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Das",
+        "Meser",
+        "liegt",
+        "da",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "Messer",
+      "explanation": "Richtig ist: Messer.",
+      "id": "doppelkonsonant_mark_168",
+      "stage": "doppelkonsonant",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Der",
+        "Koferr",
+        "ist",
+        "schwer",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "Koffer",
+      "explanation": "Richtig ist: Koffer.",
+      "id": "doppelkonsonant_mark_169",
+      "stage": "doppelkonsonant",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Wir",
+        "faren",
+        "mit",
+        "dem",
+        "Bus",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "fahren",
+      "explanation": "Richtig ist: fahren.",
+      "id": "dehnung_mark_170",
+      "stage": "dehnung",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Die",
+        "Kinder",
+        "spilen",
+        "draußen",
+        "."
+      ],
+      "errorIndex": 2,
+      "correctWord": "spielen",
+      "explanation": "Richtig ist: spielen.",
+      "id": "dehnung_mark_171",
+      "stage": "dehnung",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Der",
+        "Brif",
+        "liegt",
+        "hier",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "Brief",
+      "explanation": "Richtig ist: Brief.",
+      "id": "dehnung_mark_172",
+      "stage": "dehnung",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Die",
+        "Ban",
+        "kommt",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "Bahn",
+      "explanation": "Richtig ist: Bahn.",
+      "id": "dehnung_mark_173",
+      "stage": "dehnung",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Ich",
+        "helfe",
+        "im",
+        "."
+      ],
+      "errorIndex": 2,
+      "correctWord": "ihm",
+      "explanation": "Richtig ist: ihm.",
+      "id": "dehnung_mark_174",
+      "stage": "dehnung",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Der",
+        "Fuss",
+        "tut",
+        "weh",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "Fuß",
+      "explanation": "Richtig ist: Fuß.",
+      "id": "s_laute_mark_175",
+      "stage": "s_laute",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Der",
+        "Fluß",
+        "ist",
+        "breit",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "Fluss",
+      "explanation": "Richtig ist: Fluss.",
+      "id": "s_laute_mark_176",
+      "stage": "s_laute",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Ich",
+        "weiss",
+        "es",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "weiß",
+      "explanation": "Richtig ist: weiß.",
+      "id": "s_laute_mark_177",
+      "stage": "s_laute",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Der",
+        "Kuchen",
+        "ist",
+        "süss",
+        "."
+      ],
+      "errorIndex": 3,
+      "correctWord": "süß",
+      "explanation": "Richtig ist: süß.",
+      "id": "s_laute_mark_178",
+      "stage": "s_laute",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Die",
+        "Strasse",
+        "ist",
+        "lang",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "Straße",
+      "explanation": "Richtig ist: Straße.",
+      "id": "s_laute_mark_179",
+      "stage": "s_laute",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Das",
+        "lesen",
+        "macht",
+        "Spaß",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "Lesen",
+      "explanation": "Richtig ist: Lesen.",
+      "id": "grossschreibung_mark_180",
+      "stage": "grossschreibung",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Ich",
+        "wünsche",
+        "alles",
+        "gute",
+        "."
+      ],
+      "errorIndex": 3,
+      "correctWord": "Gute",
+      "explanation": "Richtig ist: Gute.",
+      "id": "grossschreibung_mark_181",
+      "stage": "grossschreibung",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Beim",
+        "schwimmen",
+        "lacht",
+        "er",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "Schwimmen",
+      "explanation": "Richtig ist: Schwimmen.",
+      "id": "grossschreibung_mark_182",
+      "stage": "grossschreibung",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Sie",
+        "sucht",
+        "etwas",
+        "schönes",
+        "."
+      ],
+      "errorIndex": 3,
+      "correctWord": "Schönes",
+      "explanation": "Richtig ist: Schönes.",
+      "id": "grossschreibung_mark_183",
+      "stage": "grossschreibung",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Wir",
+        "lernen",
+        "deutsch",
+        "."
+      ],
+      "errorIndex": 2,
+      "correctWord": "Deutsch",
+      "explanation": "Richtig ist: Deutsch.",
+      "id": "grossschreibung_mark_184",
+      "stage": "grossschreibung",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Er",
+        "fert",
+        "Rad",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "fährt",
+      "explanation": "Richtig ist: fährt.",
+      "id": "wortstamm_mark_185",
+      "stage": "wortstamm",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Die",
+        "Heuser",
+        "sind",
+        "groß",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "Häuser",
+      "explanation": "Richtig ist: Häuser.",
+      "id": "wortstamm_mark_186",
+      "stage": "wortstamm",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Meine",
+        "Hende",
+        "sind",
+        "kalt",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "Hände",
+      "explanation": "Richtig ist: Hände.",
+      "id": "wortstamm_mark_187",
+      "stage": "wortstamm",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Der",
+        "Hund",
+        "leuft",
+        "schnell",
+        "."
+      ],
+      "errorIndex": 2,
+      "correctWord": "läuft",
+      "explanation": "Richtig ist: läuft.",
+      "id": "wortstamm_mark_188",
+      "stage": "wortstamm",
+      "type": "mark"
+    },
+    {
+      "prompt": "Klicke das falsch geschriebene Wort an.",
+      "tokens": [
+        "Sie",
+        "zelt",
+        "Punkte",
+        "."
+      ],
+      "errorIndex": 1,
+      "correctWord": "zählt",
+      "explanation": "Richtig ist: zählt.",
+      "id": "wortstamm_mark_189",
+      "stage": "wortstamm",
+      "type": "mark"
+    }
+  ]
+}
