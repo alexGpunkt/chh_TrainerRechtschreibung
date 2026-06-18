@@ -3047,6 +3047,5759 @@
       "id": "wortstamm_mark_189",
       "stage": "wortstamm",
       "type": "mark"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ fällt um.",
+      "options": [
+        "Vase",
+        "Wase"
+      ],
+      "correct": "Vase",
+      "explanation": "Vase wird mit V geschrieben.",
+      "id": "doppelkonsonant_choice_190",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " fällt um.",
+      "options": [
+        "Vase",
+        "Wase",
+        "Vasen"
+      ],
+      "correct": "Vase",
+      "explanation": "Vase wird mit V geschrieben.",
+      "id": "doppelkonsonant_gap_191",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist aus Holz.",
+      "options": [
+        "Fass",
+        "Faß"
+      ],
+      "correct": "Fass",
+      "explanation": "Nach kurzem a schreibt man ss.",
+      "id": "s_laute_choice_192",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist aus Holz.",
+      "options": [
+        "Fass",
+        "Faß",
+        "Faß"
+      ],
+      "correct": "Fass",
+      "explanation": "Nach kurzem a schreibt man ss.",
+      "id": "s_laute_gap_193",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist neu.",
+      "options": [
+        "Haus",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_choice_194",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist neu.",
+      "options": [
+        "Haus",
+        "Hauß",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_gap_195",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ spielt im Garten.",
+      "options": [
+        "Maus",
+        "Mauß"
+      ],
+      "correct": "Maus",
+      "explanation": "Maus wird mit s geschrieben.",
+      "id": "s_laute_choice_196",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " spielt im Garten.",
+      "options": [
+        "Maus",
+        "Mauß",
+        "Mauß"
+      ],
+      "correct": "Maus",
+      "explanation": "Maus wird mit s geschrieben.",
+      "id": "s_laute_gap_197",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist aus Glas.",
+      "options": [
+        "Glas",
+        "Glaß"
+      ],
+      "correct": "Glas",
+      "explanation": "Glas wird mit s geschrieben.",
+      "id": "s_laute_choice_198",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist aus Glas.",
+      "options": [
+        "Glas",
+        "Glaß",
+        "Glaß"
+      ],
+      "correct": "Glas",
+      "explanation": "Glas wird mit s geschrieben.",
+      "id": "s_laute_gap_199",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Ich ___ mein Fahrrad.",
+      "options": [
+        "lasse",
+        "laße"
+      ],
+      "correct": "lasse",
+      "explanation": "Nach kurzem a schreibt man ss.",
+      "id": "s_laute_choice_200",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Ich ",
+      "after": " mein Fahrrad.",
+      "options": [
+        "lasse",
+        "laße",
+        "laße"
+      ],
+      "correct": "lasse",
+      "explanation": "Nach kurzem a schreibt man ss.",
+      "id": "s_laute_gap_201",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Wir ___ heute ein Lied.",
+      "options": [
+        "singen",
+        "singgen"
+      ],
+      "correct": "singen",
+      "explanation": "singen wird mit einfachem n geschrieben.",
+      "id": "doppelkonsonant_choice_202",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Wir ",
+      "after": " heute ein Lied.",
+      "options": [
+        "singen",
+        "singgen",
+        "singe"
+      ],
+      "correct": "singen",
+      "explanation": "singen wird mit einfachem n geschrieben.",
+      "id": "doppelkonsonant_gap_203",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Der ___ ist verschlossen.",
+      "options": [
+        "Schrank",
+        "Schranck"
+      ],
+      "correct": "Schrank",
+      "explanation": "Schrank wird mit einfachem k geschrieben.",
+      "id": "doppelkonsonant_choice_204",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Der ",
+      "after": " ist verschlossen.",
+      "options": [
+        "Schrank",
+        "Schranck",
+        "Schranke"
+      ],
+      "correct": "Schrank",
+      "explanation": "Schrank wird mit einfachem k geschrieben.",
+      "id": "doppelkonsonant_gap_205",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Ich ___ die Tür.",
+      "options": [
+        "öffne",
+        "öfne"
+      ],
+      "correct": "öffne",
+      "explanation": "öffne wird mit ff geschrieben.",
+      "id": "doppelkonsonant_choice_206",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Ich ",
+      "after": " die Tür.",
+      "options": [
+        "öffne",
+        "öfne",
+        "öfn"
+      ],
+      "correct": "öffne",
+      "explanation": "öffne wird mit ff geschrieben.",
+      "id": "doppelkonsonant_gap_207",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Der ___ beißt.",
+      "options": [
+        "Hund",
+        "Hundd"
+      ],
+      "correct": "Hund",
+      "explanation": "Hund wird mit einfachem d geschrieben.",
+      "id": "doppelkonsonant_choice_208",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Der ",
+      "after": " beißt.",
+      "options": [
+        "Hund",
+        "Hundd",
+        "Hunde"
+      ],
+      "correct": "Hund",
+      "explanation": "Hund wird mit einfachem d geschrieben.",
+      "id": "doppelkonsonant_gap_209",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist rot.",
+      "options": [
+        "Rose",
+        "Rosse"
+      ],
+      "correct": "Rose",
+      "explanation": "Rose wird mit einfachem s geschrieben.",
+      "id": "s_laute_choice_210",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist rot.",
+      "options": [
+        "Rose",
+        "Rosse",
+        "Rosse"
+      ],
+      "correct": "Rose",
+      "explanation": "Rose wird mit einfachem s geschrieben.",
+      "id": "s_laute_gap_211",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist groß.",
+      "options": [
+        "Wiese",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_choice_212",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist groß.",
+      "options": [
+        "Wiese",
+        "Wieße",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_gap_213",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Ich ___ mich.",
+      "options": [
+        "freue",
+        "freue"
+      ],
+      "correct": "freue",
+      "explanation": "freue wird mit eu geschrieben.",
+      "id": "dehnung_choice_214",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Ich ",
+      "after": " mich.",
+      "options": [
+        "freue",
+        "freue",
+        "freue"
+      ],
+      "correct": "freue",
+      "explanation": "freue wird mit eu geschrieben.",
+      "id": "dehnung_gap_215",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Der ___ ist laut.",
+      "options": [
+        "Lärm",
+        "Lerm"
+      ],
+      "correct": "Lärm",
+      "explanation": "Lärm gehört zu Lärm, wird mit ä geschrieben.",
+      "id": "wortstamm_choice_216",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Der ",
+      "after": " ist laut.",
+      "options": [
+        "Lärm",
+        "Lerm",
+        "Larm"
+      ],
+      "correct": "Lärm",
+      "explanation": "Lärm gehört zu Lärm, wird mit ä geschrieben.",
+      "id": "wortstamm_gap_217",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist schwer.",
+      "options": [
+        "Gepäck",
+        "Gepäck"
+      ],
+      "correct": "Gepäck",
+      "explanation": "Gepäck wird mit ä geschrieben.",
+      "id": "wortstamm_choice_218",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Das ",
+      "after": " ist schwer.",
+      "options": [
+        "Gepäck",
+        "Gepäck",
+        "Gepak"
+      ],
+      "correct": "Gepäck",
+      "explanation": "Gepäck wird mit ä geschrieben.",
+      "id": "wortstamm_gap_219",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist schön.",
+      "options": [
+        "Blume",
+        "Bluhme"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_choice_220",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist schön.",
+      "options": [
+        "Blume",
+        "Bluhme",
+        "Blume"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_gap_221",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist süß.",
+      "options": [
+        "Eis",
+        "Eiß"
+      ],
+      "correct": "Eis",
+      "explanation": "Eis wird mit s geschrieben.",
+      "id": "s_laute_choice_222",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist süß.",
+      "options": [
+        "Eis",
+        "Eiß",
+        "Eiß"
+      ],
+      "correct": "Eis",
+      "explanation": "Eis wird mit s geschrieben.",
+      "id": "s_laute_gap_223",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Wir ___ am Strand.",
+      "options": [
+        "spielen",
+        "spilen"
+      ],
+      "correct": "spielen",
+      "explanation": "spielen wird mit ie geschrieben.",
+      "id": "dehnung_choice_224",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Wir ",
+      "after": " am Strand.",
+      "options": [
+        "spielen",
+        "spilen",
+        "spieln"
+      ],
+      "correct": "spielen",
+      "explanation": "spielen wird mit ie geschrieben.",
+      "id": "dehnung_gap_225",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist weg.",
+      "options": [
+        "Kiste",
+        "Kisste"
+      ],
+      "correct": "Kiste",
+      "explanation": "Kiste wird mit einfachem s geschrieben.",
+      "id": "s_laute_choice_226",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist weg.",
+      "options": [
+        "Kiste",
+        "Kisste",
+        "Kisste"
+      ],
+      "correct": "Kiste",
+      "explanation": "Kiste wird mit einfachem s geschrieben.",
+      "id": "s_laute_gap_227",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist aus Papier.",
+      "options": [
+        "Buch",
+        "Buuch"
+      ],
+      "correct": "Buch",
+      "explanation": "Buch wird mit einfachem u geschrieben.",
+      "id": "dehnung_choice_228",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist aus Papier.",
+      "options": [
+        "Buch",
+        "Buuch",
+        "Buch"
+      ],
+      "correct": "Buch",
+      "explanation": "Buch wird mit einfachem u geschrieben.",
+      "id": "dehnung_gap_229",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Der ___ ist rund.",
+      "options": [
+        "Tisch",
+        "Tischh"
+      ],
+      "correct": "Tisch",
+      "explanation": "Tisch wird mit einfachem h geschrieben.",
+      "id": "dehnung_choice_230",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Der ",
+      "after": " ist rund.",
+      "options": [
+        "Tisch",
+        "Tischh",
+        "Tisch"
+      ],
+      "correct": "Tisch",
+      "explanation": "Tisch wird mit einfachem h geschrieben.",
+      "id": "dehnung_gap_231",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist voll.",
+      "options": [
+        "Tasche",
+        "Tascche"
+      ],
+      "correct": "Tasche",
+      "explanation": "Tasche wird mit einfachem ch geschrieben.",
+      "id": "doppelkonsonant_choice_232",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist voll.",
+      "options": [
+        "Tasche",
+        "Tascche",
+        "Tasche"
+      ],
+      "correct": "Tasche",
+      "explanation": "Tasche wird mit einfachem ch geschrieben.",
+      "id": "doppelkonsonant_gap_233",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist warm.",
+      "options": [
+        "Wasser",
+        "Wasser"
+      ],
+      "correct": "Wasser",
+      "explanation": "Wasser wird mit ss geschrieben.",
+      "id": "s_laute_choice_234",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist warm.",
+      "options": [
+        "Wasser",
+        "Wasser",
+        "Wasser"
+      ],
+      "correct": "Wasser",
+      "explanation": "Wasser wird mit ss geschrieben.",
+      "id": "s_laute_gap_235",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist laut.",
+      "options": [
+        "Musik",
+        "Musikk"
+      ],
+      "correct": "Musik",
+      "explanation": "Musik wird mit einfachem k geschrieben.",
+      "id": "doppelkonsonant_choice_236",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist laut.",
+      "options": [
+        "Musik",
+        "Musikk",
+        "Musik"
+      ],
+      "correct": "Musik",
+      "explanation": "Musik wird mit einfachem k geschrieben.",
+      "id": "doppelkonsonant_gap_237",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist schnell.",
+      "options": [
+        "Auto",
+        "Autto"
+      ],
+      "correct": "Auto",
+      "explanation": "Auto wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_238",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist schnell.",
+      "options": [
+        "Auto",
+        "Autto",
+        "Auto"
+      ],
+      "correct": "Auto",
+      "explanation": "Auto wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_239",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist lang.",
+      "options": [
+        "Leine",
+        "Lehne"
+      ],
+      "correct": "Leine",
+      "explanation": "Leine wird mit ie geschrieben.",
+      "id": "dehnung_choice_240",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist lang.",
+      "options": [
+        "Leine",
+        "Lehne",
+        "Leine"
+      ],
+      "correct": "Leine",
+      "explanation": "Leine wird mit ie geschrieben.",
+      "id": "dehnung_gap_241",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist neu.",
+      "options": [
+        "Kleid",
+        "Kleid"
+      ],
+      "correct": "Kleid",
+      "explanation": "Kleid wird mit ei geschrieben.",
+      "id": "dehnung_choice_242",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist neu.",
+      "options": [
+        "Kleid",
+        "Kleid",
+        "Kleid"
+      ],
+      "correct": "Kleid",
+      "explanation": "Kleid wird mit ei geschrieben.",
+      "id": "dehnung_gap_243",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist hoch.",
+      "options": [
+        "Mauer",
+        "Mauer"
+      ],
+      "correct": "Mauer",
+      "explanation": "Mauer wird mit au geschrieben.",
+      "id": "dehnung_choice_244",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist hoch.",
+      "options": [
+        "Mauer",
+        "Mauer",
+        "Mauer"
+      ],
+      "correct": "Mauer",
+      "explanation": "Mauer wird mit au geschrieben.",
+      "id": "dehnung_gap_245",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist rund.",
+      "options": [
+        "Rad",
+        "Raad"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem a geschrieben.",
+      "id": "dehnung_choice_246",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist rund.",
+      "options": [
+        "Rad",
+        "Raad",
+        "Rad"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem a geschrieben.",
+      "id": "dehnung_gap_247",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist scharf.",
+      "options": [
+        "Klinge",
+        "Klingge"
+      ],
+      "correct": "Klinge",
+      "explanation": "Klinge wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_choice_248",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist scharf.",
+      "options": [
+        "Klinge",
+        "Klingge",
+        "Klinge"
+      ],
+      "correct": "Klinge",
+      "explanation": "Klinge wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_gap_249",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist kalt.",
+      "options": [
+        "Eis",
+        "Eis"
+      ],
+      "correct": "Eis",
+      "explanation": "Eis wird mit s geschrieben.",
+      "id": "s_laute_choice_250",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist kalt.",
+      "options": [
+        "Eis",
+        "Eis",
+        "Eis"
+      ],
+      "correct": "Eis",
+      "explanation": "Eis wird mit s geschrieben.",
+      "id": "s_laute_gap_251",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist neu.",
+      "options": [
+        "Tür",
+        "Thür"
+      ],
+      "correct": "Tür",
+      "explanation": "Tür wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_choice_252",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist neu.",
+      "options": [
+        "Tür",
+        "Thür",
+        "Tür"
+      ],
+      "correct": "Tür",
+      "explanation": "Tür wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_gap_253",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist alt.",
+      "options": [
+        "Fenster",
+        "Fenster"
+      ],
+      "correct": "Fenster",
+      "explanation": "Fenster wird mit einfachem n geschrieben.",
+      "id": "doppelkonsonant_choice_254",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist alt.",
+      "options": [
+        "Fenster",
+        "Fenster",
+        "Fenster"
+      ],
+      "correct": "Fenster",
+      "explanation": "Fenster wird mit einfachem n geschrieben.",
+      "id": "doppelkonsonant_gap_255",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist weit.",
+      "options": [
+        "Welt",
+        "Weltt"
+      ],
+      "correct": "Welt",
+      "explanation": "Welt wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_256",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist weit.",
+      "options": [
+        "Welt",
+        "Weltt",
+        "Welt"
+      ],
+      "correct": "Welt",
+      "explanation": "Welt wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_257",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist groß.",
+      "options": [
+        "Haus",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_choice_258",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist groß.",
+      "options": [
+        "Haus",
+        "Hauß",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_gap_259",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist grün.",
+      "options": [
+        "Wiese",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_choice_260",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist grün.",
+      "options": [
+        "Wiese",
+        "Wieße",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_gap_261",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist hell.",
+      "options": [
+        "Lampe",
+        "Lamppe"
+      ],
+      "correct": "Lampe",
+      "explanation": "Lampe wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_choice_262",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist hell.",
+      "options": [
+        "Lampe",
+        "Lamppe",
+        "Lampe"
+      ],
+      "correct": "Lampe",
+      "explanation": "Lampe wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_gap_263",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist weich.",
+      "options": [
+        "Kissen",
+        "Kißen"
+      ],
+      "correct": "Kissen",
+      "explanation": "Kissen wird mit ss geschrieben.",
+      "id": "s_laute_choice_264",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist weich.",
+      "options": [
+        "Kissen",
+        "Kißen",
+        "Kißen"
+      ],
+      "correct": "Kissen",
+      "explanation": "Kissen wird mit ss geschrieben.",
+      "id": "s_laute_gap_265",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist rund.",
+      "options": [
+        "Kugel",
+        "Kuggel"
+      ],
+      "correct": "Kugel",
+      "explanation": "Kugel wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_choice_266",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist rund.",
+      "options": [
+        "Kugel",
+        "Kuggel",
+        "Kugel"
+      ],
+      "correct": "Kugel",
+      "explanation": "Kugel wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_gap_267",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist lang.",
+      "options": [
+        "Seil",
+        "Seihl"
+      ],
+      "correct": "Seil",
+      "explanation": "Seil wird mit ei geschrieben.",
+      "id": "dehnung_choice_268",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist lang.",
+      "options": [
+        "Seil",
+        "Seihl",
+        "Seil"
+      ],
+      "correct": "Seil",
+      "explanation": "Seil wird mit ei geschrieben.",
+      "id": "dehnung_gap_269",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist klein.",
+      "options": [
+        "Maus",
+        "Mauß"
+      ],
+      "correct": "Maus",
+      "explanation": "Maus wird mit s geschrieben.",
+      "id": "s_laute_choice_270",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist klein.",
+      "options": [
+        "Maus",
+        "Mauß",
+        "Mauß"
+      ],
+      "correct": "Maus",
+      "explanation": "Maus wird mit s geschrieben.",
+      "id": "s_laute_gap_271",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist hart.",
+      "options": [
+        "Brot",
+        "Brott"
+      ],
+      "correct": "Brot",
+      "explanation": "Brot wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_272",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist hart.",
+      "options": [
+        "Brot",
+        "Brott",
+        "Brot"
+      ],
+      "correct": "Brot",
+      "explanation": "Brot wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_273",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist laut.",
+      "options": [
+        "Stimme",
+        "Stime"
+      ],
+      "correct": "Stimme",
+      "explanation": "Stimme wird mit mm geschrieben.",
+      "id": "doppelkonsonant_choice_274",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist laut.",
+      "options": [
+        "Stimme",
+        "Stime",
+        "Stimm"
+      ],
+      "correct": "Stimme",
+      "explanation": "Stimme wird mit mm geschrieben.",
+      "id": "doppelkonsonant_gap_275",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist leer.",
+      "options": [
+        "Glas",
+        "Glaß"
+      ],
+      "correct": "Glas",
+      "explanation": "Glas wird mit s geschrieben.",
+      "id": "s_laute_choice_276",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist leer.",
+      "options": [
+        "Glas",
+        "Glaß",
+        "Glaß"
+      ],
+      "correct": "Glas",
+      "explanation": "Glas wird mit s geschrieben.",
+      "id": "s_laute_gap_277",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist rot.",
+      "options": [
+        "Rose",
+        "Rosse"
+      ],
+      "correct": "Rose",
+      "explanation": "Rose wird mit einfachem s geschrieben.",
+      "id": "s_laute_choice_278",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist rot.",
+      "options": [
+        "Rose",
+        "Rosse",
+        "Rosse"
+      ],
+      "correct": "Rose",
+      "explanation": "Rose wird mit einfachem s geschrieben.",
+      "id": "s_laute_gap_279",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist weich.",
+      "options": [
+        "Bett",
+        "Bet"
+      ],
+      "correct": "Bett",
+      "explanation": "Bett wird mit tt geschrieben.",
+      "id": "doppelkonsonant_choice_280",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist weich.",
+      "options": [
+        "Bett",
+        "Bet",
+        "Betn"
+      ],
+      "correct": "Bett",
+      "explanation": "Bett wird mit tt geschrieben.",
+      "id": "doppelkonsonant_gap_281",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist bunt.",
+      "options": [
+        "Blume",
+        "Bluhme"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_choice_282",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist bunt.",
+      "options": [
+        "Blume",
+        "Bluhme",
+        "Blume"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_gap_283",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist schwer.",
+      "options": [
+        "Stein",
+        "Steihn"
+      ],
+      "correct": "Stein",
+      "explanation": "Stein wird mit ei geschrieben.",
+      "id": "dehnung_choice_284",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist schwer.",
+      "options": [
+        "Stein",
+        "Steihn",
+        "Stein"
+      ],
+      "correct": "Stein",
+      "explanation": "Stein wird mit ei geschrieben.",
+      "id": "dehnung_gap_285",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist weit.",
+      "options": [
+        "Straße",
+        "Strasse"
+      ],
+      "correct": "Straße",
+      "explanation": "Straße wird mit ß geschrieben.",
+      "id": "s_laute_choice_286",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist weit.",
+      "options": [
+        "Straße",
+        "Strasse",
+        "Strasse"
+      ],
+      "correct": "Straße",
+      "explanation": "Straße wird mit ß geschrieben.",
+      "id": "s_laute_gap_287",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist groß.",
+      "options": [
+        "Schiff",
+        "Schif"
+      ],
+      "correct": "Schiff",
+      "explanation": "Schiff wird mit ff geschrieben.",
+      "id": "doppelkonsonant_choice_288",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist groß.",
+      "options": [
+        "Schiff",
+        "Schif",
+        "Schifn"
+      ],
+      "correct": "Schiff",
+      "explanation": "Schiff wird mit ff geschrieben.",
+      "id": "doppelkonsonant_gap_289",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist rund.",
+      "options": [
+        "Rad",
+        "Radd"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem d geschrieben.",
+      "id": "doppelkonsonant_choice_290",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist rund.",
+      "options": [
+        "Rad",
+        "Radd",
+        "Rade"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem d geschrieben.",
+      "id": "doppelkonsonant_gap_291",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist lang.",
+      "options": [
+        "Leiter",
+        "Leiter"
+      ],
+      "correct": "Leiter",
+      "explanation": "Leiter wird mit ei geschrieben.",
+      "id": "dehnung_choice_292",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist lang.",
+      "options": [
+        "Leiter",
+        "Leiter",
+        "Leiter"
+      ],
+      "correct": "Leiter",
+      "explanation": "Leiter wird mit ei geschrieben.",
+      "id": "dehnung_gap_293",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist hell.",
+      "options": [
+        "Licht",
+        "Licht"
+      ],
+      "correct": "Licht",
+      "explanation": "Licht wird mit ch geschrieben.",
+      "id": "dehnung_choice_294",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist hell.",
+      "options": [
+        "Licht",
+        "Licht",
+        "Licht"
+      ],
+      "correct": "Licht",
+      "explanation": "Licht wird mit ch geschrieben.",
+      "id": "dehnung_gap_295",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist süß.",
+      "options": [
+        "Torte",
+        "Tortte"
+      ],
+      "correct": "Torte",
+      "explanation": "Torte wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_296",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist süß.",
+      "options": [
+        "Torte",
+        "Tortte",
+        "Torte"
+      ],
+      "correct": "Torte",
+      "explanation": "Torte wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_297",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist neu.",
+      "options": [
+        "Hemd",
+        "Hemmd"
+      ],
+      "correct": "Hemd",
+      "explanation": "Hemd wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_choice_298",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist neu.",
+      "options": [
+        "Hemd",
+        "Hemmd",
+        "Hemde"
+      ],
+      "correct": "Hemd",
+      "explanation": "Hemd wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_gap_299",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist voll.",
+      "options": [
+        "Tasche",
+        "Tascche"
+      ],
+      "correct": "Tasche",
+      "explanation": "Tasche wird mit einfachem ch geschrieben.",
+      "id": "doppelkonsonant_choice_300",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist voll.",
+      "options": [
+        "Tasche",
+        "Tascche",
+        "Tasche"
+      ],
+      "correct": "Tasche",
+      "explanation": "Tasche wird mit einfachem ch geschrieben.",
+      "id": "doppelkonsonant_gap_301",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist alt.",
+      "options": [
+        "Schloss",
+        "Schloß"
+      ],
+      "correct": "Schloss",
+      "explanation": "Schloss wird mit ss geschrieben.",
+      "id": "s_laute_choice_302",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist alt.",
+      "options": [
+        "Schloss",
+        "Schloß",
+        "Schloß"
+      ],
+      "correct": "Schloss",
+      "explanation": "Schloss wird mit ss geschrieben.",
+      "id": "s_laute_gap_303",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist groß.",
+      "options": [
+        "Wiese",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_choice_304",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist groß.",
+      "options": [
+        "Wiese",
+        "Wieße",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_gap_305",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist rund.",
+      "options": [
+        "Ei",
+        "Ei"
+      ],
+      "correct": "Ei",
+      "explanation": "Ei wird mit ei geschrieben.",
+      "id": "dehnung_choice_306",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist rund.",
+      "options": [
+        "Ei",
+        "Ei",
+        "Ei"
+      ],
+      "correct": "Ei",
+      "explanation": "Ei wird mit ei geschrieben.",
+      "id": "dehnung_gap_307",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist kalt.",
+      "options": [
+        "Luft",
+        "Lufft"
+      ],
+      "correct": "Luft",
+      "explanation": "Luft wird mit einfachem f geschrieben.",
+      "id": "doppelkonsonant_choice_308",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist kalt.",
+      "options": [
+        "Luft",
+        "Lufft",
+        "Luft"
+      ],
+      "correct": "Luft",
+      "explanation": "Luft wird mit einfachem f geschrieben.",
+      "id": "doppelkonsonant_gap_309",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist klein.",
+      "options": [
+        "Haus",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_choice_310",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist klein.",
+      "options": [
+        "Haus",
+        "Hauß",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_gap_311",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist bunt.",
+      "options": [
+        "Blume",
+        "Bluhme"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_choice_312",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist bunt.",
+      "options": [
+        "Blume",
+        "Bluhme",
+        "Blume"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_gap_313",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist schwer.",
+      "options": [
+        "Gepäck",
+        "Gepäck"
+      ],
+      "correct": "Gepäck",
+      "explanation": "Gepäck wird mit ä geschrieben.",
+      "id": "wortstamm_choice_314",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Das ",
+      "after": " ist schwer.",
+      "options": [
+        "Gepäck",
+        "Gepäck",
+        "Gepak"
+      ],
+      "correct": "Gepäck",
+      "explanation": "Gepäck wird mit ä geschrieben.",
+      "id": "wortstamm_gap_315",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist laut.",
+      "options": [
+        "Musik",
+        "Musikk"
+      ],
+      "correct": "Musik",
+      "explanation": "Musik wird mit einfachem k geschrieben.",
+      "id": "doppelkonsonant_choice_316",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist laut.",
+      "options": [
+        "Musik",
+        "Musikk",
+        "Musik"
+      ],
+      "correct": "Musik",
+      "explanation": "Musik wird mit einfachem k geschrieben.",
+      "id": "doppelkonsonant_gap_317",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist schnell.",
+      "options": [
+        "Auto",
+        "Autto"
+      ],
+      "correct": "Auto",
+      "explanation": "Auto wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_318",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist schnell.",
+      "options": [
+        "Auto",
+        "Autto",
+        "Auto"
+      ],
+      "correct": "Auto",
+      "explanation": "Auto wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_319",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist lang.",
+      "options": [
+        "Leine",
+        "Lehne"
+      ],
+      "correct": "Leine",
+      "explanation": "Leine wird mit ie geschrieben.",
+      "id": "dehnung_choice_320",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist lang.",
+      "options": [
+        "Leine",
+        "Lehne",
+        "Leine"
+      ],
+      "correct": "Leine",
+      "explanation": "Leine wird mit ie geschrieben.",
+      "id": "dehnung_gap_321",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist neu.",
+      "options": [
+        "Kleid",
+        "Kleid"
+      ],
+      "correct": "Kleid",
+      "explanation": "Kleid wird mit ei geschrieben.",
+      "id": "dehnung_choice_322",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist neu.",
+      "options": [
+        "Kleid",
+        "Kleid",
+        "Kleid"
+      ],
+      "correct": "Kleid",
+      "explanation": "Kleid wird mit ei geschrieben.",
+      "id": "dehnung_gap_323",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist hoch.",
+      "options": [
+        "Mauer",
+        "Mauer"
+      ],
+      "correct": "Mauer",
+      "explanation": "Mauer wird mit au geschrieben.",
+      "id": "dehnung_choice_324",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist hoch.",
+      "options": [
+        "Mauer",
+        "Mauer",
+        "Mauer"
+      ],
+      "correct": "Mauer",
+      "explanation": "Mauer wird mit au geschrieben.",
+      "id": "dehnung_gap_325",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist rund.",
+      "options": [
+        "Rad",
+        "Raad"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem a geschrieben.",
+      "id": "dehnung_choice_326",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist rund.",
+      "options": [
+        "Rad",
+        "Raad",
+        "Rad"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem a geschrieben.",
+      "id": "dehnung_gap_327",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist scharf.",
+      "options": [
+        "Klinge",
+        "Klingge"
+      ],
+      "correct": "Klinge",
+      "explanation": "Klinge wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_choice_328",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist scharf.",
+      "options": [
+        "Klinge",
+        "Klingge",
+        "Klinge"
+      ],
+      "correct": "Klinge",
+      "explanation": "Klinge wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_gap_329",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist kalt.",
+      "options": [
+        "Eis",
+        "Eis"
+      ],
+      "correct": "Eis",
+      "explanation": "Eis wird mit s geschrieben.",
+      "id": "s_laute_choice_330",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist kalt.",
+      "options": [
+        "Eis",
+        "Eis",
+        "Eis"
+      ],
+      "correct": "Eis",
+      "explanation": "Eis wird mit s geschrieben.",
+      "id": "s_laute_gap_331",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist neu.",
+      "options": [
+        "Tür",
+        "Thür"
+      ],
+      "correct": "Tür",
+      "explanation": "Tür wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_choice_332",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist neu.",
+      "options": [
+        "Tür",
+        "Thür",
+        "Tür"
+      ],
+      "correct": "Tür",
+      "explanation": "Tür wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_gap_333",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist alt.",
+      "options": [
+        "Fenster",
+        "Fenster"
+      ],
+      "correct": "Fenster",
+      "explanation": "Fenster wird mit einfachem n geschrieben.",
+      "id": "doppelkonsonant_choice_334",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist alt.",
+      "options": [
+        "Fenster",
+        "Fenster",
+        "Fenster"
+      ],
+      "correct": "Fenster",
+      "explanation": "Fenster wird mit einfachem n geschrieben.",
+      "id": "doppelkonsonant_gap_335",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist weit.",
+      "options": [
+        "Welt",
+        "Weltt"
+      ],
+      "correct": "Welt",
+      "explanation": "Welt wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_336",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist weit.",
+      "options": [
+        "Welt",
+        "Weltt",
+        "Welt"
+      ],
+      "correct": "Welt",
+      "explanation": "Welt wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_337",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist groß.",
+      "options": [
+        "Haus",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_choice_338",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist groß.",
+      "options": [
+        "Haus",
+        "Hauß",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_gap_339",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist grün.",
+      "options": [
+        "Wiese",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_choice_340",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist grün.",
+      "options": [
+        "Wiese",
+        "Wieße",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_gap_341",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist hell.",
+      "options": [
+        "Lampe",
+        "Lamppe"
+      ],
+      "correct": "Lampe",
+      "explanation": "Lampe wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_choice_342",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist hell.",
+      "options": [
+        "Lampe",
+        "Lamppe",
+        "Lampe"
+      ],
+      "correct": "Lampe",
+      "explanation": "Lampe wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_gap_343",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist weich.",
+      "options": [
+        "Kissen",
+        "Kißen"
+      ],
+      "correct": "Kissen",
+      "explanation": "Kissen wird mit ss geschrieben.",
+      "id": "s_laute_choice_344",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist weich.",
+      "options": [
+        "Kissen",
+        "Kißen",
+        "Kißen"
+      ],
+      "correct": "Kissen",
+      "explanation": "Kissen wird mit ss geschrieben.",
+      "id": "s_laute_gap_345",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist rund.",
+      "options": [
+        "Kugel",
+        "Kuggel"
+      ],
+      "correct": "Kugel",
+      "explanation": "Kugel wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_choice_346",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist rund.",
+      "options": [
+        "Kugel",
+        "Kuggel",
+        "Kugel"
+      ],
+      "correct": "Kugel",
+      "explanation": "Kugel wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_gap_347",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist lang.",
+      "options": [
+        "Seil",
+        "Seihl"
+      ],
+      "correct": "Seil",
+      "explanation": "Seil wird mit ei geschrieben.",
+      "id": "dehnung_choice_348",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist lang.",
+      "options": [
+        "Seil",
+        "Seihl",
+        "Seil"
+      ],
+      "correct": "Seil",
+      "explanation": "Seil wird mit ei geschrieben.",
+      "id": "dehnung_gap_349",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist klein.",
+      "options": [
+        "Maus",
+        "Mauß"
+      ],
+      "correct": "Maus",
+      "explanation": "Maus wird mit s geschrieben.",
+      "id": "s_laute_choice_350",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist klein.",
+      "options": [
+        "Maus",
+        "Mauß",
+        "Mauß"
+      ],
+      "correct": "Maus",
+      "explanation": "Maus wird mit s geschrieben.",
+      "id": "s_laute_gap_351",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist hart.",
+      "options": [
+        "Brot",
+        "Brott"
+      ],
+      "correct": "Brot",
+      "explanation": "Brot wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_352",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist hart.",
+      "options": [
+        "Brot",
+        "Brott",
+        "Brot"
+      ],
+      "correct": "Brot",
+      "explanation": "Brot wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_353",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist laut.",
+      "options": [
+        "Stimme",
+        "Stime"
+      ],
+      "correct": "Stimme",
+      "explanation": "Stimme wird mit mm geschrieben.",
+      "id": "doppelkonsonant_choice_354",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist laut.",
+      "options": [
+        "Stimme",
+        "Stime",
+        "Stimm"
+      ],
+      "correct": "Stimme",
+      "explanation": "Stimme wird mit mm geschrieben.",
+      "id": "doppelkonsonant_gap_355",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist leer.",
+      "options": [
+        "Glas",
+        "Glaß"
+      ],
+      "correct": "Glas",
+      "explanation": "Glas wird mit s geschrieben.",
+      "id": "s_laute_choice_356",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist leer.",
+      "options": [
+        "Glas",
+        "Glaß",
+        "Glaß"
+      ],
+      "correct": "Glas",
+      "explanation": "Glas wird mit s geschrieben.",
+      "id": "s_laute_gap_357",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist rot.",
+      "options": [
+        "Rose",
+        "Rosse"
+      ],
+      "correct": "Rose",
+      "explanation": "Rose wird mit einfachem s geschrieben.",
+      "id": "s_laute_choice_358",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist rot.",
+      "options": [
+        "Rose",
+        "Rosse",
+        "Rosse"
+      ],
+      "correct": "Rose",
+      "explanation": "Rose wird mit einfachem s geschrieben.",
+      "id": "s_laute_gap_359",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist weich.",
+      "options": [
+        "Bett",
+        "Bet"
+      ],
+      "correct": "Bett",
+      "explanation": "Bett wird mit tt geschrieben.",
+      "id": "doppelkonsonant_choice_360",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist weich.",
+      "options": [
+        "Bett",
+        "Bet",
+        "Betn"
+      ],
+      "correct": "Bett",
+      "explanation": "Bett wird mit tt geschrieben.",
+      "id": "doppelkonsonant_gap_361",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist bunt.",
+      "options": [
+        "Blume",
+        "Bluhme"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_choice_362",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist bunt.",
+      "options": [
+        "Blume",
+        "Bluhme",
+        "Blume"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_gap_363",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist schwer.",
+      "options": [
+        "Stein",
+        "Steihn"
+      ],
+      "correct": "Stein",
+      "explanation": "Stein wird mit ei geschrieben.",
+      "id": "dehnung_choice_364",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist schwer.",
+      "options": [
+        "Stein",
+        "Steihn",
+        "Stein"
+      ],
+      "correct": "Stein",
+      "explanation": "Stein wird mit ei geschrieben.",
+      "id": "dehnung_gap_365",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist weit.",
+      "options": [
+        "Straße",
+        "Strasse"
+      ],
+      "correct": "Straße",
+      "explanation": "Straße wird mit ß geschrieben.",
+      "id": "s_laute_choice_366",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist weit.",
+      "options": [
+        "Straße",
+        "Strasse",
+        "Strasse"
+      ],
+      "correct": "Straße",
+      "explanation": "Straße wird mit ß geschrieben.",
+      "id": "s_laute_gap_367",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist groß.",
+      "options": [
+        "Schiff",
+        "Schif"
+      ],
+      "correct": "Schiff",
+      "explanation": "Schiff wird mit ff geschrieben.",
+      "id": "doppelkonsonant_choice_368",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist groß.",
+      "options": [
+        "Schiff",
+        "Schif",
+        "Schifn"
+      ],
+      "correct": "Schiff",
+      "explanation": "Schiff wird mit ff geschrieben.",
+      "id": "doppelkonsonant_gap_369",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist rund.",
+      "options": [
+        "Rad",
+        "Radd"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem d geschrieben.",
+      "id": "doppelkonsonant_choice_370",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist rund.",
+      "options": [
+        "Rad",
+        "Radd",
+        "Rade"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem d geschrieben.",
+      "id": "doppelkonsonant_gap_371",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist lang.",
+      "options": [
+        "Leiter",
+        "Leiter"
+      ],
+      "correct": "Leiter",
+      "explanation": "Leiter wird mit ei geschrieben.",
+      "id": "dehnung_choice_372",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist lang.",
+      "options": [
+        "Leiter",
+        "Leiter",
+        "Leiter"
+      ],
+      "correct": "Leiter",
+      "explanation": "Leiter wird mit ei geschrieben.",
+      "id": "dehnung_gap_373",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist hell.",
+      "options": [
+        "Licht",
+        "Licht"
+      ],
+      "correct": "Licht",
+      "explanation": "Licht wird mit ch geschrieben.",
+      "id": "dehnung_choice_374",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist hell.",
+      "options": [
+        "Licht",
+        "Licht",
+        "Licht"
+      ],
+      "correct": "Licht",
+      "explanation": "Licht wird mit ch geschrieben.",
+      "id": "dehnung_gap_375",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist süß.",
+      "options": [
+        "Torte",
+        "Tortte"
+      ],
+      "correct": "Torte",
+      "explanation": "Torte wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_376",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist süß.",
+      "options": [
+        "Torte",
+        "Tortte",
+        "Torte"
+      ],
+      "correct": "Torte",
+      "explanation": "Torte wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_377",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist neu.",
+      "options": [
+        "Hemd",
+        "Hemmd"
+      ],
+      "correct": "Hemd",
+      "explanation": "Hemd wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_choice_378",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist neu.",
+      "options": [
+        "Hemd",
+        "Hemmd",
+        "Hemde"
+      ],
+      "correct": "Hemd",
+      "explanation": "Hemd wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_gap_379",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist voll.",
+      "options": [
+        "Tasche",
+        "Tascche"
+      ],
+      "correct": "Tasche",
+      "explanation": "Tasche wird mit einfachem ch geschrieben.",
+      "id": "doppelkonsonant_choice_380",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist voll.",
+      "options": [
+        "Tasche",
+        "Tascche",
+        "Tasche"
+      ],
+      "correct": "Tasche",
+      "explanation": "Tasche wird mit einfachem ch geschrieben.",
+      "id": "doppelkonsonant_gap_381",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist alt.",
+      "options": [
+        "Schloss",
+        "Schloß"
+      ],
+      "correct": "Schloss",
+      "explanation": "Schloss wird mit ss geschrieben.",
+      "id": "s_laute_choice_382",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist alt.",
+      "options": [
+        "Schloss",
+        "Schloß",
+        "Schloß"
+      ],
+      "correct": "Schloss",
+      "explanation": "Schloss wird mit ss geschrieben.",
+      "id": "s_laute_gap_383",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist groß.",
+      "options": [
+        "Wiese",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_choice_384",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist groß.",
+      "options": [
+        "Wiese",
+        "Wieße",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_gap_385",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist rund.",
+      "options": [
+        "Ei",
+        "Ei"
+      ],
+      "correct": "Ei",
+      "explanation": "Ei wird mit ei geschrieben.",
+      "id": "dehnung_choice_386",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist rund.",
+      "options": [
+        "Ei",
+        "Ei",
+        "Ei"
+      ],
+      "correct": "Ei",
+      "explanation": "Ei wird mit ei geschrieben.",
+      "id": "dehnung_gap_387",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist kalt.",
+      "options": [
+        "Luft",
+        "Lufft"
+      ],
+      "correct": "Luft",
+      "explanation": "Luft wird mit einfachem f geschrieben.",
+      "id": "doppelkonsonant_choice_388",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist kalt.",
+      "options": [
+        "Luft",
+        "Lufft",
+        "Luft"
+      ],
+      "correct": "Luft",
+      "explanation": "Luft wird mit einfachem f geschrieben.",
+      "id": "doppelkonsonant_gap_389",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist klein.",
+      "options": [
+        "Haus",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_choice_390",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist klein.",
+      "options": [
+        "Haus",
+        "Hauß",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_gap_391",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist bunt.",
+      "options": [
+        "Blume",
+        "Bluhme"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_choice_392",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist bunt.",
+      "options": [
+        "Blume",
+        "Bluhme",
+        "Blume"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_gap_393",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist schwer.",
+      "options": [
+        "Gepäck",
+        "Gepäck"
+      ],
+      "correct": "Gepäck",
+      "explanation": "Gepäck wird mit ä geschrieben.",
+      "id": "wortstamm_choice_394",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Das ",
+      "after": " ist schwer.",
+      "options": [
+        "Gepäck",
+        "Gepäck",
+        "Gepak"
+      ],
+      "correct": "Gepäck",
+      "explanation": "Gepäck wird mit ä geschrieben.",
+      "id": "wortstamm_gap_395",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist laut.",
+      "options": [
+        "Musik",
+        "Musikk"
+      ],
+      "correct": "Musik",
+      "explanation": "Musik wird mit einfachem k geschrieben.",
+      "id": "doppelkonsonant_choice_396",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist laut.",
+      "options": [
+        "Musik",
+        "Musikk",
+        "Musik"
+      ],
+      "correct": "Musik",
+      "explanation": "Musik wird mit einfachem k geschrieben.",
+      "id": "doppelkonsonant_gap_397",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist schnell.",
+      "options": [
+        "Auto",
+        "Autto"
+      ],
+      "correct": "Auto",
+      "explanation": "Auto wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_398",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist schnell.",
+      "options": [
+        "Auto",
+        "Autto",
+        "Auto"
+      ],
+      "correct": "Auto",
+      "explanation": "Auto wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_399",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist lang.",
+      "options": [
+        "Leine",
+        "Lehne"
+      ],
+      "correct": "Leine",
+      "explanation": "Leine wird mit ie geschrieben.",
+      "id": "dehnung_choice_400",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist lang.",
+      "options": [
+        "Leine",
+        "Lehne",
+        "Leine"
+      ],
+      "correct": "Leine",
+      "explanation": "Leine wird mit ie geschrieben.",
+      "id": "dehnung_gap_401",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist neu.",
+      "options": [
+        "Kleid",
+        "Kleid"
+      ],
+      "correct": "Kleid",
+      "explanation": "Kleid wird mit ei geschrieben.",
+      "id": "dehnung_choice_402",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist neu.",
+      "options": [
+        "Kleid",
+        "Kleid",
+        "Kleid"
+      ],
+      "correct": "Kleid",
+      "explanation": "Kleid wird mit ei geschrieben.",
+      "id": "dehnung_gap_403",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist hoch.",
+      "options": [
+        "Mauer",
+        "Mauer"
+      ],
+      "correct": "Mauer",
+      "explanation": "Mauer wird mit au geschrieben.",
+      "id": "dehnung_choice_404",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist hoch.",
+      "options": [
+        "Mauer",
+        "Mauer",
+        "Mauer"
+      ],
+      "correct": "Mauer",
+      "explanation": "Mauer wird mit au geschrieben.",
+      "id": "dehnung_gap_405",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist rund.",
+      "options": [
+        "Rad",
+        "Raad"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem a geschrieben.",
+      "id": "dehnung_choice_406",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist rund.",
+      "options": [
+        "Rad",
+        "Raad",
+        "Rad"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem a geschrieben.",
+      "id": "dehnung_gap_407",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist scharf.",
+      "options": [
+        "Klinge",
+        "Klingge"
+      ],
+      "correct": "Klinge",
+      "explanation": "Klinge wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_choice_408",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist scharf.",
+      "options": [
+        "Klinge",
+        "Klingge",
+        "Klinge"
+      ],
+      "correct": "Klinge",
+      "explanation": "Klinge wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_gap_409",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist kalt.",
+      "options": [
+        "Eis",
+        "Eis"
+      ],
+      "correct": "Eis",
+      "explanation": "Eis wird mit s geschrieben.",
+      "id": "s_laute_choice_410",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist kalt.",
+      "options": [
+        "Eis",
+        "Eis",
+        "Eis"
+      ],
+      "correct": "Eis",
+      "explanation": "Eis wird mit s geschrieben.",
+      "id": "s_laute_gap_411",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist neu.",
+      "options": [
+        "Tür",
+        "Thür"
+      ],
+      "correct": "Tür",
+      "explanation": "Tür wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_choice_412",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist neu.",
+      "options": [
+        "Tür",
+        "Thür",
+        "Tür"
+      ],
+      "correct": "Tür",
+      "explanation": "Tür wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_gap_413",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist alt.",
+      "options": [
+        "Fenster",
+        "Fenster"
+      ],
+      "correct": "Fenster",
+      "explanation": "Fenster wird mit einfachem n geschrieben.",
+      "id": "doppelkonsonant_choice_414",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist alt.",
+      "options": [
+        "Fenster",
+        "Fenster",
+        "Fenster"
+      ],
+      "correct": "Fenster",
+      "explanation": "Fenster wird mit einfachem n geschrieben.",
+      "id": "doppelkonsonant_gap_415",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist weit.",
+      "options": [
+        "Welt",
+        "Weltt"
+      ],
+      "correct": "Welt",
+      "explanation": "Welt wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_416",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist weit.",
+      "options": [
+        "Welt",
+        "Weltt",
+        "Welt"
+      ],
+      "correct": "Welt",
+      "explanation": "Welt wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_417",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist groß.",
+      "options": [
+        "Haus",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_choice_418",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist groß.",
+      "options": [
+        "Haus",
+        "Hauß",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_gap_419",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist grün.",
+      "options": [
+        "Wiese",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_choice_420",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist grün.",
+      "options": [
+        "Wiese",
+        "Wieße",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_gap_421",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist hell.",
+      "options": [
+        "Lampe",
+        "Lamppe"
+      ],
+      "correct": "Lampe",
+      "explanation": "Lampe wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_choice_422",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist hell.",
+      "options": [
+        "Lampe",
+        "Lamppe",
+        "Lampe"
+      ],
+      "correct": "Lampe",
+      "explanation": "Lampe wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_gap_423",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist weich.",
+      "options": [
+        "Kissen",
+        "Kißen"
+      ],
+      "correct": "Kissen",
+      "explanation": "Kissen wird mit ss geschrieben.",
+      "id": "s_laute_choice_424",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist weich.",
+      "options": [
+        "Kissen",
+        "Kißen",
+        "Kißen"
+      ],
+      "correct": "Kissen",
+      "explanation": "Kissen wird mit ss geschrieben.",
+      "id": "s_laute_gap_425",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist rund.",
+      "options": [
+        "Kugel",
+        "Kuggel"
+      ],
+      "correct": "Kugel",
+      "explanation": "Kugel wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_choice_426",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist rund.",
+      "options": [
+        "Kugel",
+        "Kuggel",
+        "Kugel"
+      ],
+      "correct": "Kugel",
+      "explanation": "Kugel wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_gap_427",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist lang.",
+      "options": [
+        "Seil",
+        "Seihl"
+      ],
+      "correct": "Seil",
+      "explanation": "Seil wird mit ei geschrieben.",
+      "id": "dehnung_choice_428",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist lang.",
+      "options": [
+        "Seil",
+        "Seihl",
+        "Seil"
+      ],
+      "correct": "Seil",
+      "explanation": "Seil wird mit ei geschrieben.",
+      "id": "dehnung_gap_429",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist klein.",
+      "options": [
+        "Maus",
+        "Mauß"
+      ],
+      "correct": "Maus",
+      "explanation": "Maus wird mit s geschrieben.",
+      "id": "s_laute_choice_430",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist klein.",
+      "options": [
+        "Maus",
+        "Mauß",
+        "Mauß"
+      ],
+      "correct": "Maus",
+      "explanation": "Maus wird mit s geschrieben.",
+      "id": "s_laute_gap_431",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist hart.",
+      "options": [
+        "Brot",
+        "Brott"
+      ],
+      "correct": "Brot",
+      "explanation": "Brot wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_432",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist hart.",
+      "options": [
+        "Brot",
+        "Brott",
+        "Brot"
+      ],
+      "correct": "Brot",
+      "explanation": "Brot wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_433",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist laut.",
+      "options": [
+        "Stimme",
+        "Stime"
+      ],
+      "correct": "Stimme",
+      "explanation": "Stimme wird mit mm geschrieben.",
+      "id": "doppelkonsonant_choice_434",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist laut.",
+      "options": [
+        "Stimme",
+        "Stime",
+        "Stimm"
+      ],
+      "correct": "Stimme",
+      "explanation": "Stimme wird mit mm geschrieben.",
+      "id": "doppelkonsonant_gap_435",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist leer.",
+      "options": [
+        "Glas",
+        "Glaß"
+      ],
+      "correct": "Glas",
+      "explanation": "Glas wird mit s geschrieben.",
+      "id": "s_laute_choice_436",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist leer.",
+      "options": [
+        "Glas",
+        "Glaß",
+        "Glaß"
+      ],
+      "correct": "Glas",
+      "explanation": "Glas wird mit s geschrieben.",
+      "id": "s_laute_gap_437",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist rot.",
+      "options": [
+        "Rose",
+        "Rosse"
+      ],
+      "correct": "Rose",
+      "explanation": "Rose wird mit einfachem s geschrieben.",
+      "id": "s_laute_choice_438",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist rot.",
+      "options": [
+        "Rose",
+        "Rosse",
+        "Rosse"
+      ],
+      "correct": "Rose",
+      "explanation": "Rose wird mit einfachem s geschrieben.",
+      "id": "s_laute_gap_439",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist weich.",
+      "options": [
+        "Bett",
+        "Bet"
+      ],
+      "correct": "Bett",
+      "explanation": "Bett wird mit tt geschrieben.",
+      "id": "doppelkonsonant_choice_440",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist weich.",
+      "options": [
+        "Bett",
+        "Bet",
+        "Betn"
+      ],
+      "correct": "Bett",
+      "explanation": "Bett wird mit tt geschrieben.",
+      "id": "doppelkonsonant_gap_441",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist bunt.",
+      "options": [
+        "Blume",
+        "Bluhme"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_choice_442",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist bunt.",
+      "options": [
+        "Blume",
+        "Bluhme",
+        "Blume"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_gap_443",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist schwer.",
+      "options": [
+        "Stein",
+        "Steihn"
+      ],
+      "correct": "Stein",
+      "explanation": "Stein wird mit ei geschrieben.",
+      "id": "dehnung_choice_444",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist schwer.",
+      "options": [
+        "Stein",
+        "Steihn",
+        "Stein"
+      ],
+      "correct": "Stein",
+      "explanation": "Stein wird mit ei geschrieben.",
+      "id": "dehnung_gap_445",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist weit.",
+      "options": [
+        "Straße",
+        "Strasse"
+      ],
+      "correct": "Straße",
+      "explanation": "Straße wird mit ß geschrieben.",
+      "id": "s_laute_choice_446",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist weit.",
+      "options": [
+        "Straße",
+        "Strasse",
+        "Strasse"
+      ],
+      "correct": "Straße",
+      "explanation": "Straße wird mit ß geschrieben.",
+      "id": "s_laute_gap_447",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist groß.",
+      "options": [
+        "Schiff",
+        "Schif"
+      ],
+      "correct": "Schiff",
+      "explanation": "Schiff wird mit ff geschrieben.",
+      "id": "doppelkonsonant_choice_448",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist groß.",
+      "options": [
+        "Schiff",
+        "Schif",
+        "Schifn"
+      ],
+      "correct": "Schiff",
+      "explanation": "Schiff wird mit ff geschrieben.",
+      "id": "doppelkonsonant_gap_449",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist rund.",
+      "options": [
+        "Rad",
+        "Radd"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem d geschrieben.",
+      "id": "doppelkonsonant_choice_450",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist rund.",
+      "options": [
+        "Rad",
+        "Radd",
+        "Rade"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem d geschrieben.",
+      "id": "doppelkonsonant_gap_451",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist lang.",
+      "options": [
+        "Leiter",
+        "Leiter"
+      ],
+      "correct": "Leiter",
+      "explanation": "Leiter wird mit ei geschrieben.",
+      "id": "dehnung_choice_452",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist lang.",
+      "options": [
+        "Leiter",
+        "Leiter",
+        "Leiter"
+      ],
+      "correct": "Leiter",
+      "explanation": "Leiter wird mit ei geschrieben.",
+      "id": "dehnung_gap_453",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist hell.",
+      "options": [
+        "Licht",
+        "Licht"
+      ],
+      "correct": "Licht",
+      "explanation": "Licht wird mit ch geschrieben.",
+      "id": "dehnung_choice_454",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist hell.",
+      "options": [
+        "Licht",
+        "Licht",
+        "Licht"
+      ],
+      "correct": "Licht",
+      "explanation": "Licht wird mit ch geschrieben.",
+      "id": "dehnung_gap_455",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist süß.",
+      "options": [
+        "Torte",
+        "Tortte"
+      ],
+      "correct": "Torte",
+      "explanation": "Torte wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_456",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist süß.",
+      "options": [
+        "Torte",
+        "Tortte",
+        "Torte"
+      ],
+      "correct": "Torte",
+      "explanation": "Torte wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_457",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist neu.",
+      "options": [
+        "Hemd",
+        "Hemmd"
+      ],
+      "correct": "Hemd",
+      "explanation": "Hemd wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_choice_458",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist neu.",
+      "options": [
+        "Hemd",
+        "Hemmd",
+        "Hemde"
+      ],
+      "correct": "Hemd",
+      "explanation": "Hemd wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_gap_459",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist voll.",
+      "options": [
+        "Tasche",
+        "Tascche"
+      ],
+      "correct": "Tasche",
+      "explanation": "Tasche wird mit einfachem ch geschrieben.",
+      "id": "doppelkonsonant_choice_460",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist voll.",
+      "options": [
+        "Tasche",
+        "Tascche",
+        "Tasche"
+      ],
+      "correct": "Tasche",
+      "explanation": "Tasche wird mit einfachem ch geschrieben.",
+      "id": "doppelkonsonant_gap_461",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist alt.",
+      "options": [
+        "Schloss",
+        "Schloß"
+      ],
+      "correct": "Schloss",
+      "explanation": "Schloss wird mit ss geschrieben.",
+      "id": "s_laute_choice_462",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist alt.",
+      "options": [
+        "Schloss",
+        "Schloß",
+        "Schloß"
+      ],
+      "correct": "Schloss",
+      "explanation": "Schloss wird mit ss geschrieben.",
+      "id": "s_laute_gap_463",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist groß.",
+      "options": [
+        "Wiese",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_choice_464",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist groß.",
+      "options": [
+        "Wiese",
+        "Wieße",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_gap_465",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist rund.",
+      "options": [
+        "Ei",
+        "Ei"
+      ],
+      "correct": "Ei",
+      "explanation": "Ei wird mit ei geschrieben.",
+      "id": "dehnung_choice_466",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist rund.",
+      "options": [
+        "Ei",
+        "Ei",
+        "Ei"
+      ],
+      "correct": "Ei",
+      "explanation": "Ei wird mit ei geschrieben.",
+      "id": "dehnung_gap_467",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist kalt.",
+      "options": [
+        "Luft",
+        "Lufft"
+      ],
+      "correct": "Luft",
+      "explanation": "Luft wird mit einfachem f geschrieben.",
+      "id": "doppelkonsonant_choice_468",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist kalt.",
+      "options": [
+        "Luft",
+        "Lufft",
+        "Luft"
+      ],
+      "correct": "Luft",
+      "explanation": "Luft wird mit einfachem f geschrieben.",
+      "id": "doppelkonsonant_gap_469",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist klein.",
+      "options": [
+        "Haus",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_choice_470",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist klein.",
+      "options": [
+        "Haus",
+        "Hauß",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_gap_471",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist bunt.",
+      "options": [
+        "Blume",
+        "Bluhme"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_choice_472",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist bunt.",
+      "options": [
+        "Blume",
+        "Bluhme",
+        "Blume"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_gap_473",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist schwer.",
+      "options": [
+        "Gepäck",
+        "Gepäck"
+      ],
+      "correct": "Gepäck",
+      "explanation": "Gepäck wird mit ä geschrieben.",
+      "id": "wortstamm_choice_474",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Das ",
+      "after": " ist schwer.",
+      "options": [
+        "Gepäck",
+        "Gepäck",
+        "Gepak"
+      ],
+      "correct": "Gepäck",
+      "explanation": "Gepäck wird mit ä geschrieben.",
+      "id": "wortstamm_gap_475",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist laut.",
+      "options": [
+        "Musik",
+        "Musikk"
+      ],
+      "correct": "Musik",
+      "explanation": "Musik wird mit einfachem k geschrieben.",
+      "id": "doppelkonsonant_choice_476",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist laut.",
+      "options": [
+        "Musik",
+        "Musikk",
+        "Musik"
+      ],
+      "correct": "Musik",
+      "explanation": "Musik wird mit einfachem k geschrieben.",
+      "id": "doppelkonsonant_gap_477",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist schnell.",
+      "options": [
+        "Auto",
+        "Autto"
+      ],
+      "correct": "Auto",
+      "explanation": "Auto wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_478",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist schnell.",
+      "options": [
+        "Auto",
+        "Autto",
+        "Auto"
+      ],
+      "correct": "Auto",
+      "explanation": "Auto wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_479",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist lang.",
+      "options": [
+        "Leine",
+        "Lehne"
+      ],
+      "correct": "Leine",
+      "explanation": "Leine wird mit ie geschrieben.",
+      "id": "dehnung_choice_480",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist lang.",
+      "options": [
+        "Leine",
+        "Lehne",
+        "Leine"
+      ],
+      "correct": "Leine",
+      "explanation": "Leine wird mit ie geschrieben.",
+      "id": "dehnung_gap_481",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist neu.",
+      "options": [
+        "Kleid",
+        "Kleid"
+      ],
+      "correct": "Kleid",
+      "explanation": "Kleid wird mit ei geschrieben.",
+      "id": "dehnung_choice_482",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist neu.",
+      "options": [
+        "Kleid",
+        "Kleid",
+        "Kleid"
+      ],
+      "correct": "Kleid",
+      "explanation": "Kleid wird mit ei geschrieben.",
+      "id": "dehnung_gap_483",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist hoch.",
+      "options": [
+        "Mauer",
+        "Mauer"
+      ],
+      "correct": "Mauer",
+      "explanation": "Mauer wird mit au geschrieben.",
+      "id": "dehnung_choice_484",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist hoch.",
+      "options": [
+        "Mauer",
+        "Mauer",
+        "Mauer"
+      ],
+      "correct": "Mauer",
+      "explanation": "Mauer wird mit au geschrieben.",
+      "id": "dehnung_gap_485",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist rund.",
+      "options": [
+        "Rad",
+        "Raad"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem a geschrieben.",
+      "id": "dehnung_choice_486",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist rund.",
+      "options": [
+        "Rad",
+        "Raad",
+        "Rad"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem a geschrieben.",
+      "id": "dehnung_gap_487",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist scharf.",
+      "options": [
+        "Klinge",
+        "Klingge"
+      ],
+      "correct": "Klinge",
+      "explanation": "Klinge wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_choice_488",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist scharf.",
+      "options": [
+        "Klinge",
+        "Klingge",
+        "Klinge"
+      ],
+      "correct": "Klinge",
+      "explanation": "Klinge wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_gap_489",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist kalt.",
+      "options": [
+        "Eis",
+        "Eis"
+      ],
+      "correct": "Eis",
+      "explanation": "Eis wird mit s geschrieben.",
+      "id": "s_laute_choice_490",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist kalt.",
+      "options": [
+        "Eis",
+        "Eis",
+        "Eis"
+      ],
+      "correct": "Eis",
+      "explanation": "Eis wird mit s geschrieben.",
+      "id": "s_laute_gap_491",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist neu.",
+      "options": [
+        "Tür",
+        "Thür"
+      ],
+      "correct": "Tür",
+      "explanation": "Tür wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_choice_492",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist neu.",
+      "options": [
+        "Tür",
+        "Thür",
+        "Tür"
+      ],
+      "correct": "Tür",
+      "explanation": "Tür wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_gap_493",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist alt.",
+      "options": [
+        "Fenster",
+        "Fenster"
+      ],
+      "correct": "Fenster",
+      "explanation": "Fenster wird mit einfachem n geschrieben.",
+      "id": "doppelkonsonant_choice_494",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist alt.",
+      "options": [
+        "Fenster",
+        "Fenster",
+        "Fenster"
+      ],
+      "correct": "Fenster",
+      "explanation": "Fenster wird mit einfachem n geschrieben.",
+      "id": "doppelkonsonant_gap_495",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist weit.",
+      "options": [
+        "Welt",
+        "Weltt"
+      ],
+      "correct": "Welt",
+      "explanation": "Welt wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_496",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist weit.",
+      "options": [
+        "Welt",
+        "Weltt",
+        "Welt"
+      ],
+      "correct": "Welt",
+      "explanation": "Welt wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_497",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist groß.",
+      "options": [
+        "Haus",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_choice_498",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist groß.",
+      "options": [
+        "Haus",
+        "Hauß",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_gap_499",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist grün.",
+      "options": [
+        "Wiese",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_choice_500",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist grün.",
+      "options": [
+        "Wiese",
+        "Wieße",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_gap_501",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist hell.",
+      "options": [
+        "Lampe",
+        "Lamppe"
+      ],
+      "correct": "Lampe",
+      "explanation": "Lampe wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_choice_502",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist hell.",
+      "options": [
+        "Lampe",
+        "Lamppe",
+        "Lampe"
+      ],
+      "correct": "Lampe",
+      "explanation": "Lampe wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_gap_503",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist weich.",
+      "options": [
+        "Kissen",
+        "Kißen"
+      ],
+      "correct": "Kissen",
+      "explanation": "Kissen wird mit ss geschrieben.",
+      "id": "s_laute_choice_504",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist weich.",
+      "options": [
+        "Kissen",
+        "Kißen",
+        "Kißen"
+      ],
+      "correct": "Kissen",
+      "explanation": "Kissen wird mit ss geschrieben.",
+      "id": "s_laute_gap_505",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist rund.",
+      "options": [
+        "Kugel",
+        "Kuggel"
+      ],
+      "correct": "Kugel",
+      "explanation": "Kugel wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_choice_506",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist rund.",
+      "options": [
+        "Kugel",
+        "Kuggel",
+        "Kugel"
+      ],
+      "correct": "Kugel",
+      "explanation": "Kugel wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_gap_507",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist lang.",
+      "options": [
+        "Seil",
+        "Seihl"
+      ],
+      "correct": "Seil",
+      "explanation": "Seil wird mit ei geschrieben.",
+      "id": "dehnung_choice_508",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist lang.",
+      "options": [
+        "Seil",
+        "Seihl",
+        "Seil"
+      ],
+      "correct": "Seil",
+      "explanation": "Seil wird mit ei geschrieben.",
+      "id": "dehnung_gap_509",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist klein.",
+      "options": [
+        "Maus",
+        "Mauß"
+      ],
+      "correct": "Maus",
+      "explanation": "Maus wird mit s geschrieben.",
+      "id": "s_laute_choice_510",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist klein.",
+      "options": [
+        "Maus",
+        "Mauß",
+        "Mauß"
+      ],
+      "correct": "Maus",
+      "explanation": "Maus wird mit s geschrieben.",
+      "id": "s_laute_gap_511",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist hart.",
+      "options": [
+        "Brot",
+        "Brott"
+      ],
+      "correct": "Brot",
+      "explanation": "Brot wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_512",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist hart.",
+      "options": [
+        "Brot",
+        "Brott",
+        "Brot"
+      ],
+      "correct": "Brot",
+      "explanation": "Brot wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_513",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist laut.",
+      "options": [
+        "Stimme",
+        "Stime"
+      ],
+      "correct": "Stimme",
+      "explanation": "Stimme wird mit mm geschrieben.",
+      "id": "doppelkonsonant_choice_514",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist laut.",
+      "options": [
+        "Stimme",
+        "Stime",
+        "Stimm"
+      ],
+      "correct": "Stimme",
+      "explanation": "Stimme wird mit mm geschrieben.",
+      "id": "doppelkonsonant_gap_515",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist leer.",
+      "options": [
+        "Glas",
+        "Glaß"
+      ],
+      "correct": "Glas",
+      "explanation": "Glas wird mit s geschrieben.",
+      "id": "s_laute_choice_516",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist leer.",
+      "options": [
+        "Glas",
+        "Glaß",
+        "Glaß"
+      ],
+      "correct": "Glas",
+      "explanation": "Glas wird mit s geschrieben.",
+      "id": "s_laute_gap_517",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist rot.",
+      "options": [
+        "Rose",
+        "Rosse"
+      ],
+      "correct": "Rose",
+      "explanation": "Rose wird mit einfachem s geschrieben.",
+      "id": "s_laute_choice_518",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist rot.",
+      "options": [
+        "Rose",
+        "Rosse",
+        "Rosse"
+      ],
+      "correct": "Rose",
+      "explanation": "Rose wird mit einfachem s geschrieben.",
+      "id": "s_laute_gap_519",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist weich.",
+      "options": [
+        "Bett",
+        "Bet"
+      ],
+      "correct": "Bett",
+      "explanation": "Bett wird mit tt geschrieben.",
+      "id": "doppelkonsonant_choice_520",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist weich.",
+      "options": [
+        "Bett",
+        "Bet",
+        "Betn"
+      ],
+      "correct": "Bett",
+      "explanation": "Bett wird mit tt geschrieben.",
+      "id": "doppelkonsonant_gap_521",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist bunt.",
+      "options": [
+        "Blume",
+        "Bluhme"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_choice_522",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist bunt.",
+      "options": [
+        "Blume",
+        "Bluhme",
+        "Blume"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_gap_523",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist schwer.",
+      "options": [
+        "Stein",
+        "Steihn"
+      ],
+      "correct": "Stein",
+      "explanation": "Stein wird mit ei geschrieben.",
+      "id": "dehnung_choice_524",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist schwer.",
+      "options": [
+        "Stein",
+        "Steihn",
+        "Stein"
+      ],
+      "correct": "Stein",
+      "explanation": "Stein wird mit ei geschrieben.",
+      "id": "dehnung_gap_525",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist weit.",
+      "options": [
+        "Straße",
+        "Strasse"
+      ],
+      "correct": "Straße",
+      "explanation": "Straße wird mit ß geschrieben.",
+      "id": "s_laute_choice_526",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist weit.",
+      "options": [
+        "Straße",
+        "Strasse",
+        "Strasse"
+      ],
+      "correct": "Straße",
+      "explanation": "Straße wird mit ß geschrieben.",
+      "id": "s_laute_gap_527",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist groß.",
+      "options": [
+        "Schiff",
+        "Schif"
+      ],
+      "correct": "Schiff",
+      "explanation": "Schiff wird mit ff geschrieben.",
+      "id": "doppelkonsonant_choice_528",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist groß.",
+      "options": [
+        "Schiff",
+        "Schif",
+        "Schifn"
+      ],
+      "correct": "Schiff",
+      "explanation": "Schiff wird mit ff geschrieben.",
+      "id": "doppelkonsonant_gap_529",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist rund.",
+      "options": [
+        "Rad",
+        "Radd"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem d geschrieben.",
+      "id": "doppelkonsonant_choice_530",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist rund.",
+      "options": [
+        "Rad",
+        "Radd",
+        "Rade"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem d geschrieben.",
+      "id": "doppelkonsonant_gap_531",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist lang.",
+      "options": [
+        "Leiter",
+        "Leiter"
+      ],
+      "correct": "Leiter",
+      "explanation": "Leiter wird mit ei geschrieben.",
+      "id": "dehnung_choice_532",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist lang.",
+      "options": [
+        "Leiter",
+        "Leiter",
+        "Leiter"
+      ],
+      "correct": "Leiter",
+      "explanation": "Leiter wird mit ei geschrieben.",
+      "id": "dehnung_gap_533",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist hell.",
+      "options": [
+        "Licht",
+        "Licht"
+      ],
+      "correct": "Licht",
+      "explanation": "Licht wird mit ch geschrieben.",
+      "id": "dehnung_choice_534",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist hell.",
+      "options": [
+        "Licht",
+        "Licht",
+        "Licht"
+      ],
+      "correct": "Licht",
+      "explanation": "Licht wird mit ch geschrieben.",
+      "id": "dehnung_gap_535",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist süß.",
+      "options": [
+        "Torte",
+        "Tortte"
+      ],
+      "correct": "Torte",
+      "explanation": "Torte wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_536",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist süß.",
+      "options": [
+        "Torte",
+        "Tortte",
+        "Torte"
+      ],
+      "correct": "Torte",
+      "explanation": "Torte wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_537",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist neu.",
+      "options": [
+        "Hemd",
+        "Hemmd"
+      ],
+      "correct": "Hemd",
+      "explanation": "Hemd wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_choice_538",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist neu.",
+      "options": [
+        "Hemd",
+        "Hemmd",
+        "Hemde"
+      ],
+      "correct": "Hemd",
+      "explanation": "Hemd wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_gap_539",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist voll.",
+      "options": [
+        "Tasche",
+        "Tascche"
+      ],
+      "correct": "Tasche",
+      "explanation": "Tasche wird mit einfachem ch geschrieben.",
+      "id": "doppelkonsonant_choice_540",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist voll.",
+      "options": [
+        "Tasche",
+        "Tascche",
+        "Tasche"
+      ],
+      "correct": "Tasche",
+      "explanation": "Tasche wird mit einfachem ch geschrieben.",
+      "id": "doppelkonsonant_gap_541",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist alt.",
+      "options": [
+        "Schloss",
+        "Schloß"
+      ],
+      "correct": "Schloss",
+      "explanation": "Schloss wird mit ss geschrieben.",
+      "id": "s_laute_choice_542",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist alt.",
+      "options": [
+        "Schloss",
+        "Schloß",
+        "Schloß"
+      ],
+      "correct": "Schloss",
+      "explanation": "Schloss wird mit ss geschrieben.",
+      "id": "s_laute_gap_543",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist groß.",
+      "options": [
+        "Wiese",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_choice_544",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist groß.",
+      "options": [
+        "Wiese",
+        "Wieße",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_gap_545",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist rund.",
+      "options": [
+        "Ei",
+        "Ei"
+      ],
+      "correct": "Ei",
+      "explanation": "Ei wird mit ei geschrieben.",
+      "id": "dehnung_choice_546",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist rund.",
+      "options": [
+        "Ei",
+        "Ei",
+        "Ei"
+      ],
+      "correct": "Ei",
+      "explanation": "Ei wird mit ei geschrieben.",
+      "id": "dehnung_gap_547",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist kalt.",
+      "options": [
+        "Luft",
+        "Lufft"
+      ],
+      "correct": "Luft",
+      "explanation": "Luft wird mit einfachem f geschrieben.",
+      "id": "doppelkonsonant_choice_548",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist kalt.",
+      "options": [
+        "Luft",
+        "Lufft",
+        "Luft"
+      ],
+      "correct": "Luft",
+      "explanation": "Luft wird mit einfachem f geschrieben.",
+      "id": "doppelkonsonant_gap_549",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist klein.",
+      "options": [
+        "Haus",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_choice_550",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist klein.",
+      "options": [
+        "Haus",
+        "Hauß",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_gap_551",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist bunt.",
+      "options": [
+        "Blume",
+        "Bluhme"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_choice_552",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist bunt.",
+      "options": [
+        "Blume",
+        "Bluhme",
+        "Blume"
+      ],
+      "correct": "Blume",
+      "explanation": "Blume wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_gap_553",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist schwer.",
+      "options": [
+        "Gepäck",
+        "Gepäck"
+      ],
+      "correct": "Gepäck",
+      "explanation": "Gepäck wird mit ä geschrieben.",
+      "id": "wortstamm_choice_554",
+      "stage": "wortstamm",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das Wort mit richtiger Ableitung ein.",
+      "before": "Das ",
+      "after": " ist schwer.",
+      "options": [
+        "Gepäck",
+        "Gepäck",
+        "Gepak"
+      ],
+      "correct": "Gepäck",
+      "explanation": "Gepäck wird mit ä geschrieben.",
+      "id": "wortstamm_gap_555",
+      "stage": "wortstamm",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist laut.",
+      "options": [
+        "Musik",
+        "Musikk"
+      ],
+      "correct": "Musik",
+      "explanation": "Musik wird mit einfachem k geschrieben.",
+      "id": "doppelkonsonant_choice_556",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist laut.",
+      "options": [
+        "Musik",
+        "Musikk",
+        "Musik"
+      ],
+      "correct": "Musik",
+      "explanation": "Musik wird mit einfachem k geschrieben.",
+      "id": "doppelkonsonant_gap_557",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist schnell.",
+      "options": [
+        "Auto",
+        "Autto"
+      ],
+      "correct": "Auto",
+      "explanation": "Auto wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_558",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist schnell.",
+      "options": [
+        "Auto",
+        "Autto",
+        "Auto"
+      ],
+      "correct": "Auto",
+      "explanation": "Auto wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_559",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist lang.",
+      "options": [
+        "Leine",
+        "Lehne"
+      ],
+      "correct": "Leine",
+      "explanation": "Leine wird mit ie geschrieben.",
+      "id": "dehnung_choice_560",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist lang.",
+      "options": [
+        "Leine",
+        "Lehne",
+        "Leine"
+      ],
+      "correct": "Leine",
+      "explanation": "Leine wird mit ie geschrieben.",
+      "id": "dehnung_gap_561",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist neu.",
+      "options": [
+        "Kleid",
+        "Kleid"
+      ],
+      "correct": "Kleid",
+      "explanation": "Kleid wird mit ei geschrieben.",
+      "id": "dehnung_choice_562",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist neu.",
+      "options": [
+        "Kleid",
+        "Kleid",
+        "Kleid"
+      ],
+      "correct": "Kleid",
+      "explanation": "Kleid wird mit ei geschrieben.",
+      "id": "dehnung_gap_563",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist hoch.",
+      "options": [
+        "Mauer",
+        "Mauer"
+      ],
+      "correct": "Mauer",
+      "explanation": "Mauer wird mit au geschrieben.",
+      "id": "dehnung_choice_564",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist hoch.",
+      "options": [
+        "Mauer",
+        "Mauer",
+        "Mauer"
+      ],
+      "correct": "Mauer",
+      "explanation": "Mauer wird mit au geschrieben.",
+      "id": "dehnung_gap_565",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist rund.",
+      "options": [
+        "Rad",
+        "Raad"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem a geschrieben.",
+      "id": "dehnung_choice_566",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist rund.",
+      "options": [
+        "Rad",
+        "Raad",
+        "Rad"
+      ],
+      "correct": "Rad",
+      "explanation": "Rad wird mit einfachem a geschrieben.",
+      "id": "dehnung_gap_567",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist scharf.",
+      "options": [
+        "Klinge",
+        "Klingge"
+      ],
+      "correct": "Klinge",
+      "explanation": "Klinge wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_choice_568",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist scharf.",
+      "options": [
+        "Klinge",
+        "Klingge",
+        "Klinge"
+      ],
+      "correct": "Klinge",
+      "explanation": "Klinge wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_gap_569",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist kalt.",
+      "options": [
+        "Eis",
+        "Eis"
+      ],
+      "correct": "Eis",
+      "explanation": "Eis wird mit s geschrieben.",
+      "id": "s_laute_choice_570",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist kalt.",
+      "options": [
+        "Eis",
+        "Eis",
+        "Eis"
+      ],
+      "correct": "Eis",
+      "explanation": "Eis wird mit s geschrieben.",
+      "id": "s_laute_gap_571",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist neu.",
+      "options": [
+        "Tür",
+        "Thür"
+      ],
+      "correct": "Tür",
+      "explanation": "Tür wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_choice_572",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Die ",
+      "after": " ist neu.",
+      "options": [
+        "Tür",
+        "Thür",
+        "Tür"
+      ],
+      "correct": "Tür",
+      "explanation": "Tür wird ohne Dehnungs-h geschrieben.",
+      "id": "dehnung_gap_573",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist alt.",
+      "options": [
+        "Fenster",
+        "Fenster"
+      ],
+      "correct": "Fenster",
+      "explanation": "Fenster wird mit einfachem n geschrieben.",
+      "id": "doppelkonsonant_choice_574",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist alt.",
+      "options": [
+        "Fenster",
+        "Fenster",
+        "Fenster"
+      ],
+      "correct": "Fenster",
+      "explanation": "Fenster wird mit einfachem n geschrieben.",
+      "id": "doppelkonsonant_gap_575",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist weit.",
+      "options": [
+        "Welt",
+        "Weltt"
+      ],
+      "correct": "Welt",
+      "explanation": "Welt wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_576",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist weit.",
+      "options": [
+        "Welt",
+        "Weltt",
+        "Welt"
+      ],
+      "correct": "Welt",
+      "explanation": "Welt wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_577",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist groß.",
+      "options": [
+        "Haus",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_choice_578",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist groß.",
+      "options": [
+        "Haus",
+        "Hauß",
+        "Hauß"
+      ],
+      "correct": "Haus",
+      "explanation": "Haus wird mit s geschrieben.",
+      "id": "s_laute_gap_579",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist grün.",
+      "options": [
+        "Wiese",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_choice_580",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist grün.",
+      "options": [
+        "Wiese",
+        "Wieße",
+        "Wieße"
+      ],
+      "correct": "Wiese",
+      "explanation": "Wiese wird mit einfachem s geschrieben.",
+      "id": "s_laute_gap_581",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist hell.",
+      "options": [
+        "Lampe",
+        "Lamppe"
+      ],
+      "correct": "Lampe",
+      "explanation": "Lampe wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_choice_582",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist hell.",
+      "options": [
+        "Lampe",
+        "Lamppe",
+        "Lampe"
+      ],
+      "correct": "Lampe",
+      "explanation": "Lampe wird mit einfachem m geschrieben.",
+      "id": "doppelkonsonant_gap_583",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist weich.",
+      "options": [
+        "Kissen",
+        "Kißen"
+      ],
+      "correct": "Kissen",
+      "explanation": "Kissen wird mit ss geschrieben.",
+      "id": "s_laute_choice_584",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist weich.",
+      "options": [
+        "Kissen",
+        "Kißen",
+        "Kißen"
+      ],
+      "correct": "Kissen",
+      "explanation": "Kissen wird mit ss geschrieben.",
+      "id": "s_laute_gap_585",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist rund.",
+      "options": [
+        "Kugel",
+        "Kuggel"
+      ],
+      "correct": "Kugel",
+      "explanation": "Kugel wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_choice_586",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist rund.",
+      "options": [
+        "Kugel",
+        "Kuggel",
+        "Kugel"
+      ],
+      "correct": "Kugel",
+      "explanation": "Kugel wird mit einfachem g geschrieben.",
+      "id": "doppelkonsonant_gap_587",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist lang.",
+      "options": [
+        "Seil",
+        "Seihl"
+      ],
+      "correct": "Seil",
+      "explanation": "Seil wird mit ei geschrieben.",
+      "id": "dehnung_choice_588",
+      "stage": "dehnung",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze das passende Dehnungswort ein.",
+      "before": "Das ",
+      "after": " ist lang.",
+      "options": [
+        "Seil",
+        "Seihl",
+        "Seil"
+      ],
+      "correct": "Seil",
+      "explanation": "Seil wird mit ei geschrieben.",
+      "id": "dehnung_gap_589",
+      "stage": "dehnung",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist klein.",
+      "options": [
+        "Maus",
+        "Mauß"
+      ],
+      "correct": "Maus",
+      "explanation": "Maus wird mit s geschrieben.",
+      "id": "s_laute_choice_590",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist klein.",
+      "options": [
+        "Maus",
+        "Mauß",
+        "Mauß"
+      ],
+      "correct": "Maus",
+      "explanation": "Maus wird mit s geschrieben.",
+      "id": "s_laute_gap_591",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist hart.",
+      "options": [
+        "Brot",
+        "Brott"
+      ],
+      "correct": "Brot",
+      "explanation": "Brot wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_choice_592",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Das ",
+      "after": " ist hart.",
+      "options": [
+        "Brot",
+        "Brott",
+        "Brot"
+      ],
+      "correct": "Brot",
+      "explanation": "Brot wird mit einfachem t geschrieben.",
+      "id": "doppelkonsonant_gap_593",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist laut.",
+      "options": [
+        "Stimme",
+        "Stime"
+      ],
+      "correct": "Stimme",
+      "explanation": "Stimme wird mit mm geschrieben.",
+      "id": "doppelkonsonant_choice_594",
+      "stage": "doppelkonsonant",
+      "type": "choice"
+    },
+    {
+      "prompt": "Ziehe oder tippe das richtige Wort in die Lücke.",
+      "before": "Die ",
+      "after": " ist laut.",
+      "options": [
+        "Stimme",
+        "Stime",
+        "Stimm"
+      ],
+      "correct": "Stimme",
+      "explanation": "Stimme wird mit mm geschrieben.",
+      "id": "doppelkonsonant_gap_595",
+      "stage": "doppelkonsonant",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist leer.",
+      "options": [
+        "Glas",
+        "Glaß"
+      ],
+      "correct": "Glas",
+      "explanation": "Glas wird mit s geschrieben.",
+      "id": "s_laute_choice_596",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Das ",
+      "after": " ist leer.",
+      "options": [
+        "Glas",
+        "Glaß",
+        "Glaß"
+      ],
+      "correct": "Glas",
+      "explanation": "Glas wird mit s geschrieben.",
+      "id": "s_laute_gap_597",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Die ___ ist rot.",
+      "options": [
+        "Rose",
+        "Rosse"
+      ],
+      "correct": "Rose",
+      "explanation": "Rose wird mit einfachem s geschrieben.",
+      "id": "s_laute_choice_598",
+      "stage": "s_laute",
+      "type": "choice"
+    },
+    {
+      "prompt": "Setze die richtige s-Schreibung ein.",
+      "before": "Die ",
+      "after": " ist rot.",
+      "options": [
+        "Rose",
+        "Rosse",
+        "Rosse"
+      ],
+      "correct": "Rose",
+      "explanation": "Rose wird mit einfachem s geschrieben.",
+      "id": "s_laute_gap_599",
+      "stage": "s_laute",
+      "type": "gap"
+    },
+    {
+      "prompt": "Wähle die richtige Schreibweise.",
+      "sentence": "Das ___ ist weich.",
+      "options": [
+        "Bett",
+        "Bet"
+      ],
+      "correct": "Bett",
+      "explanation": "Bett wird mit tt geschrieben.",
+      "id": "doppelkonsonant_choice_600",
+      "stage": "doppelkonsonant",
+      "type": "choice"
     }
   ]
 }
