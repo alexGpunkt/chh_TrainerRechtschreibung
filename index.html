@@ -220,7 +220,19 @@ function setData(j,msg){
 }
 function initStateStructures(){
   DATA.stages.forEach(s=>{
-    state.stats[s.key]=state.stats[s.key]||{attempts:0,correct:0,wrong:0,reviewAttempts:0,reviewCorrect:0,reviewWrong:0,errorTypes:{}};
+    state.stats[s.key]=state.stats[s.key]||{};
+    state.stats[s.key].attempts=state.stats[s.key].attempts||0;
+    state.stats[s.key].correct=state.stats[s.key].correct||0;
+    state.stats[s.key].wrong=state.stats[s.key].wrong||0;
+    // Lernfortschritt der Etappe: zählt NUR Aufgaben der aktuell aktiven Etappe.
+    state.stats[s.key].learningAttempts=state.stats[s.key].learningAttempts||0;
+    state.stats[s.key].learningCorrect=state.stats[s.key].learningCorrect||0;
+    state.stats[s.key].learningWrong=state.stats[s.key].learningWrong||0;
+    // Wiederholungen: zählen separat und bewegen keine Etappe weiter.
+    state.stats[s.key].reviewAttempts=state.stats[s.key].reviewAttempts||0;
+    state.stats[s.key].reviewCorrect=state.stats[s.key].reviewCorrect||0;
+    state.stats[s.key].reviewWrong=state.stats[s.key].reviewWrong||0;
+    state.stats[s.key].errorTypes=state.stats[s.key].errorTypes||{};
     state.reviewWeight[s.key]=state.reviewWeight[s.key]||1;
   });
 }
@@ -386,12 +398,41 @@ function checkAnswer(){
   if(t.type==='mark'){given=String(state.selected); ok=Number(state.selected)===Number(t.errorIndex);}
   if(t.type==='sort'){ok=t.items.every((it,i)=>state.selected.placements[i]===it.group); given=JSON.stringify(state.selected.placements);}
   if(t.type==='text'||t.type==='free_text'){given=document.getElementById('textAnswer').value.trim(); ok=evaluateText(t,given);}
-  state.answered=true; state.attempts++; state.lastResults.push(ok); state.lastResults=state.lastResults.slice(-20);
-  const st=state.stats[t.stage]; st.attempts++; if(ok){state.correct++; st.correct++;} else {st.wrong++; const err=errorType(t); st.errorTypes[err]=(st.errorTypes[err]||0)+1; state.errorLog.push({time:new Date().toLocaleString('de-DE'),stage:t.stage,type:t.type,error:err,prompt:t.prompt,given,correct:t.correct||t.correction||'siehe Aufgabe'});}
+
+  // Nur Aufgaben der aktuell aktiven Etappe verändern den Etappenfortschritt.
+  // Wiederholungsaufgaben früherer Etappen bleiben reine Wiederholungen.
+  const affectsStageProgress = isNewProgressTask(t);
+
+  state.answered=true;
+  state.attempts++;
+  state.lastResults.push(ok);
+  state.lastResults=state.lastResults.slice(-20);
+
+  const st=state.stats[t.stage];
+  st.attempts++;
+  if(ok){
+    state.correct++;
+    st.correct++;
+    if(affectsStageProgress){
+      st.learningAttempts++;
+      st.learningCorrect++;
+    }
+  } else {
+    st.wrong++;
+    if(affectsStageProgress){
+      st.learningAttempts++;
+      st.learningWrong++;
+    }
+    const err=errorType(t);
+    st.errorTypes[err]=(st.errorTypes[err]||0)+1;
+    state.errorLog.push({time:new Date().toLocaleString('de-DE'),stage:t.stage,type:t.type,error:err,prompt:t.prompt,given,correct:t.correct||t.correction||'siehe Aufgabe'});
+  }
+
   markSolution(ok);
-  if(t.mode==='new') handleNew(ok); else handleReview(t.stage,ok);
+  if(affectsStageProgress) handleNew(ok); else handleReview(t.stage,ok);
+
   els.check.classList.remove('show'); els.next.classList.add('show'); saveLocal(); renderJourney(); updateMenu();
-  track(`result|stage=${t.stage}|type=${t.type}|mode=${t.mode}|level=${state.effectiveLevel}|ok=${ok?1:0}`, {event:'result',stage:t.stage,type:t.type,level:state.effectiveLevel,ok,progress:progressPercent(),attempts:state.attempts,error:ok?'':errorType(t)});
+  track(`result|stage=${t.stage}|type=${t.type}|mode=${affectsStageProgress?'new':'review'}|progressAffected=${affectsStageProgress?1:0}|level=${state.effectiveLevel}|ok=${ok?1:0}`, {event:'result',stage:t.stage,type:t.type,level:state.effectiveLevel,ok,progress:progressPercent(),progressAffected:affectsStageProgress,attempts:state.attempts,error:ok?'':errorType(t)});
 }
 function errorType(t){return {choice:'Auswahlfehler',choice_reason:'Begründung unsicher',gap:'Lücke falsch',mark:'Fehlerstelle unsicher',sort:'Sortierung unsicher',text:'Freitext/Anwendung unsicher'}[t.type]||'Fehler'}
 function markSolution(ok){
@@ -401,11 +442,13 @@ function markSolution(ok){
   if(t.type==='sort') els.work.querySelectorAll('.chip').forEach(c=>{const i=Number(c.dataset.i); c.classList.add(state.selected.placements[i]===t.items[i].group?'correct':'wrong')});
 }
 function handleNew(ok){
+  // Sicherheitsriegel: Auch wenn eine Aufgabe versehentlich als „new“ markiert wurde,
+  // zählt sie nur, wenn ihre stage exakt der aktuellen Etappe entspricht.
   if(!isNewProgressTask(state.current)){
     handleReview(state.current.stage, ok);
     return;
   }
-  if(ok){state.newCorrect++; state.newSinceReview++; els.feedback.className='feedback ok'; els.feedback.textContent='Richtig. Deine aktuelle Strategie wird sicherer.'; if(state.newCorrect>=REQUIRED_NEW_CORRECT)unlockStage();}
+  if(ok){state.newCorrect++; state.newSinceReview++; els.feedback.className='feedback ok'; els.feedback.textContent='Richtig. Deine aktuelle Etappe wird sicherer.'; if(state.newCorrect>=REQUIRED_NEW_CORRECT)unlockStage();}
   else{els.feedback.className='feedback bad'; els.feedback.textContent='Noch nicht sicher. Schau dir den Regelhinweis an und versuche die nächste Aufgabe.';}
 }
 function handleReview(k,ok){
@@ -432,8 +475,8 @@ function renderJourney(){
 function successRate(c,a){return a?Math.round(c/a*100)+' %':'0 %'}
 function updateMenu(){updateProgressPanel();updateErrorsPanel();updateHelpPanel();updateBadgesPanel()}
 function updateProgressPanel(){
-  if(!DATA)return; const rows=DATA.stages.map((s,i)=>{const st=state.stats[s.key]||{}; const status=i<state.stageIndex?'gelernt':i===state.stageIndex?'aktuell':'gesperrt'; return `<tr><td>${esc(s.label)}<br><small>${status}</small></td><td>${st.attempts||0}</td><td>${st.correct||0}</td><td>${st.wrong||0}</td><td>${successRate(st.correct||0,st.attempts||0)}</td><td>${Number(state.reviewWeight[s.key]||1).toFixed(1)}</td></tr>`}).join('');
-  els.progressPanel.innerHTML=`<h3>Lernstand</h3><div class="stat-grid"><div class="stat"><b>${state.attempts}</b><span>Aufgaben</span></div><div class="stat"><b>${successRate(state.correct,state.attempts)}</b><span>Trefferquote</span></div><div class="stat"><b>${state.effectiveLevel}</b><span>aktive Schwierigkeit</span></div><div class="stat"><b>${state.newCorrect}/${REQUIRED_NEW_CORRECT}</b><span>Etappenfortschritt</span></div></div><p>Auswahl: <b>${state.selectedLevel==='auto'?'automatisch':state.selectedLevel}</b></p><table><thead><tr><th>Strategie</th><th>Ges.</th><th>richtig</th><th>falsch</th><th>Quote</th><th>Wdh.</th></tr></thead><tbody>${rows}</tbody></table>`;
+  if(!DATA)return; const rows=DATA.stages.map((s,i)=>{const st=state.stats[s.key]||{}; const status=i<state.stageIndex?'gelernt':i===state.stageIndex?'aktuell':'gesperrt'; return `<tr><td>${esc(s.label)}<br><small>${status}</small></td><td>${st.learningAttempts||0}</td><td>${st.learningCorrect||0}</td><td>${st.learningWrong||0}</td><td>${successRate(st.learningCorrect||0,st.learningAttempts||0)}</td><td>${st.reviewAttempts||0}</td><td>${Number(state.reviewWeight[s.key]||1).toFixed(1)}</td></tr>`}).join('');
+  els.progressPanel.innerHTML=`<h3>Lernstand</h3><div class="stat-grid"><div class="stat"><b>${state.attempts}</b><span>alle Aufgaben</span></div><div class="stat"><b>${successRate(state.correct,state.attempts)}</b><span>Trefferquote gesamt</span></div><div class="stat"><b>${state.effectiveLevel}</b><span>aktive Schwierigkeit</span></div><div class="stat"><b>${state.newCorrect}/${REQUIRED_NEW_CORRECT}</b><span>aktuelle Etappe</span></div></div><p>Auswahl: <b>${state.selectedLevel==='auto'?'automatisch':state.selectedLevel}</b></p><p><b>Wichtig:</b> Nur Lernaufgaben der aktuell aktiven Etappe erhöhen den Etappenfortschritt. Wiederholungen werden separat gezählt.</p><table><thead><tr><th>Strategie</th><th>Lern</th><th>richtig</th><th>falsch</th><th>Quote</th><th>Wdh.</th><th>Wdh.-Faktor</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
 function updateErrorsPanel(){
   const logs=state.errorLog.slice(-12).reverse(); els.errorsPanel.innerHTML=`<h3>Deine Fehlerkartei</h3><p>Hier siehst du, welche Bereiche du noch üben solltest.</p>${logs.length?logs.map(e=>`<div class="error-card"><b>${esc(label(e.stage))} · ${esc(e.error)}</b><br><small>${esc(e.time)}</small><p>${esc(e.prompt||'')}</p><p><b>Deine Antwort:</b> ${esc(e.given)}<br><b>Richtig wäre:</b> ${esc(e.correct)}</p></div>`).join(''):'<p>Noch keine Fehler gespeichert.</p>'}`;
