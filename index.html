@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-<title>Rechtschreibtrainer RLP · Campus Hannah Höch</title>
+<title>Rechtschreibtrainer RLP v4 · Campus Hannah Höch</title>
 <style>
 :root {
   --text:#102033; --muted:#64748b; --accent:#2563eb; --accent2:#0f766e;
@@ -149,6 +149,8 @@ function currentRule(){const s=DATA.stages.find(x=>x.key===state.current?.stage)
 function rand(a){return a[Math.floor(Math.random()*a.length)]}
 function rank(level){return LEVEL_RANK[level]||1}
 function norm(s){return String(s||'').trim().toLowerCase().replace(/[„“"]/g,'').replace(/\s+/g,' ')}
+function normExact(s){return String(s??'').trim().replace(/[„“"]/g,'').replace(/\s+/g,' ')}
+function sameAnswer(a,b){return normExact(a)===normExact(b)}
 function esc(s){return String(s??'').replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
 function track(action, obj={}){ if(window.KM_TRACK_EVENT) window.KM_TRACK_EVENT(action); if(window.KM_TRACK_PROGRESS) window.KM_TRACK_PROGRESS({app:'rechtschreibung',...obj}); console.log('[track]',action,obj); }
 
@@ -269,16 +271,70 @@ function chooseTask(){
   let chosen=null;
   if(state.stageIndex>0 && state.newSinceReview>=REVIEW_AFTER) chosen=candidates.filter(c=>c.mode==='review').sort((a,b)=>b.weight-a.weight)[0];
   if(!chosen){let sum=candidates.reduce((a,b)=>a+b.weight,0), r=Math.random()*sum; for(const c of candidates){r-=c.weight;if(r<=0){chosen=c;break}}}
-  const tasks=availableTasks(chosen.key); const base=rand(tasks);
+  const tasks=availableTasks(chosen.key); let pool=tasks;
+  if(state.current && tasks.length>1) pool=tasks.filter(x=>(x.id||x.prompt)!==(state.current.id||state.current.prompt));
+  const base=rand(pool.length?pool:tasks);
   if(!base){ console.error('[Aufgaben] Leere Aufgabenliste für', chosen); return; }
   const t={...base,stage:base.stage||chosen.key,mode:chosen.mode,type:base.type||'choice'};
   state.current=t; renderTask();
   track(`task|stage=${t.stage}|type=${t.type}|mode=${t.mode}|level=${state.effectiveLevel}`, {event:'task',stage:t.stage,type:t.type,level:state.effectiveLevel,progress:progressPercent(),attempts:state.attempts});
 }
 function taskKindName(t){return {choice:'Auswahl',choice_reason:'Begründung',gap:'Lückentext',mark:'Fehler finden',sort:'Sortieren',text:'Freitext',free_text:'Freitext'}[t.type]||t.type}
+
+// Mischt Arrays stabil pro Anzeige neu. So liegt die richtige Antwort nicht immer links.
+function shuffleArray(arr){
+  const a = Array.isArray(arr) ? arr.slice() : [];
+  for(let i=a.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]];
+  }
+  return a;
+}
+function uniqueOptions(options){
+  const seen=new Set();
+  return (options||[]).filter(o=>{
+    const k=normExact(o);
+    if(!k || seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
+}
+function shuffledOptions(t){
+  const base=uniqueOptions(t.options||[]);
+  // Falls die richtige Lösung aus Versehen nicht in den Optionen steht, wird sie ergänzt.
+  if(t.correct!==undefined && !base.some(o=>sameAnswer(o,t.correct))) base.push(t.correct);
+
+  // Wirklich neu mischen. Zusätzlich wird verhindert, dass die richtige Lösung
+  // zweimal hintereinander bei derselben Aufgabe an derselben Position landet,
+  // sofern mindestens zwei Optionen vorhanden sind.
+  let mixed=shuffleArray(base);
+  if(t.correct!==undefined && mixed.length>1){
+    const key='lastCorrectIndex_'+(t.id||t.stage+'_'+t.prompt+'_'+t.correct);
+    const last=Number(sessionStorage.getItem(key));
+    let idx=mixed.findIndex(o=>sameAnswer(o,t.correct));
+    let tries=0;
+    while(idx===last && tries<10){
+      mixed=shuffleArray(base);
+      idx=mixed.findIndex(o=>sameAnswer(o,t.correct));
+      tries++;
+    }
+    if(idx>=0) sessionStorage.setItem(key,String(idx));
+  }
+  return mixed;
+}
+
+function gapSentenceHtml(t){
+  if(typeof t.before==='string' || typeof t.after==='string'){
+    return `${esc(t.before||'')}<span class="blank" id="blank">___</span>${esc(t.after||'')}`;
+  }
+  return esc(t.sentence||'___').replace('___','<span class="blank" id="blank">___</span>');
+}
+function isNewProgressTask(t){
+  return t && t.mode==='new' && DATA && DATA.stages[state.stageIndex] && t.stage===DATA.stages[state.stageIndex].key;
+}
 function renderTask(){
   const t=state.current;
-  els.prompt.textContent=t.prompt||'Aufgabe'; els.typeBadge.textContent=label(t.stage)+' · '+taskKindName(t);
+  els.prompt.textContent=t.prompt||'Aufgabe'; els.typeBadge.textContent=label(t.stage)+' · '+taskKindName(t)+(t.mode==='review'?' · Wiederholung':'');
   els.ruleInline.innerHTML=currentRule()+(t.hint?'<br><b>Hinweis:</b> '+esc(t.hint):'');
   els.ruleInline.classList.toggle('open', state.effectiveLevel==='A');
   els.ruleToggle.textContent=els.ruleInline.classList.contains('open')?'Regel ausblenden':'Regel anzeigen';
@@ -292,10 +348,26 @@ function renderTask(){
   renderJourney(); updateMenu();
 }
 function showCheck(){let show=false; const t=state.current; if(!t)return; if(['choice','choice_reason','gap','mark'].includes(t.type)) show=state.selected!==null&&state.selected!==undefined; if(t.type==='sort') show=t.items.every((_,i)=>state.selected?.placements?.[i]); if(t.type==='text'||t.type==='free_text') show=(document.getElementById('textAnswer')?.value||'').trim().length>1; els.check.classList.toggle('show',show)}
-function renderChoice(t){els.work.innerHTML=`<div><div class="sentence">${esc(t.sentence||'Wähle die richtige Antwort.')}</div><div class="options">${t.options.map(o=>`<button class="option" data-v="${esc(o)}">${esc(o)}</button>`).join('')}</div></div>`; els.work.querySelectorAll('.option').forEach(b=>b.onclick=()=>{if(state.answered)return; state.selected=b.dataset.v; els.work.querySelectorAll('.option').forEach(x=>x.classList.remove('selected')); b.classList.add('selected'); showCheck();})}
-function renderGap(t){const sent=esc(t.sentence||'___').replace('___','<span class="blank" id="blank">___</span>'); els.work.innerHTML=`<div><div class="sentence">${sent}</div><div class="options">${t.options.map(o=>`<button class="option" data-v="${esc(o)}">${esc(o)}</button>`).join('')}</div></div>`; els.work.querySelectorAll('.option').forEach(b=>b.onclick=()=>{if(state.answered)return; state.selected=b.dataset.v; document.getElementById('blank').textContent=b.dataset.v; els.work.querySelectorAll('.option').forEach(x=>x.classList.remove('selected')); b.classList.add('selected'); showCheck();})}
+function renderChoice(t){
+  const opts=shuffledOptions(t);
+  els.work.innerHTML=`<div><div class="sentence">${esc(t.sentence||'Wähle die richtige Antwort.')}</div><div class="options">${opts.map(o=>`<button class="option" data-v="${esc(o)}">${esc(o)}</button>`).join('')}</div></div>`;
+  els.work.querySelectorAll('.option').forEach(b=>b.onclick=()=>{if(state.answered)return; state.selected=b.dataset.v; els.work.querySelectorAll('.option').forEach(x=>x.classList.remove('selected')); b.classList.add('selected'); showCheck();})
+}
+function renderGap(t){
+  const sent=gapSentenceHtml(t);
+  const opts=shuffledOptions(t);
+  els.work.innerHTML=`<div><div class="sentence">${sent}</div><div class="options">${opts.map(o=>`<button class="option" data-v="${esc(o)}">${esc(o)}</button>`).join('')}</div></div>`;
+  els.work.querySelectorAll('.option').forEach(b=>b.onclick=()=>{if(state.answered)return; state.selected=b.dataset.v; const blank=document.getElementById('blank'); if(blank) blank.textContent=b.dataset.v; els.work.querySelectorAll('.option').forEach(x=>x.classList.remove('selected')); b.classList.add('selected'); showCheck();})
+}
 function renderMark(t){els.work.innerHTML=`<div><div class="sentence">Klicke im Satz:</div><div class="word-row">${t.words.map((w,i)=>`<button class="word-btn" data-i="${i}">${esc(w)}</button>`).join('')}</div></div>`; els.work.querySelectorAll('.word-btn').forEach(b=>b.onclick=()=>{if(state.answered)return; state.selected=Number(b.dataset.i); els.work.querySelectorAll('.word-btn').forEach(x=>x.classList.remove('selected')); b.classList.add('selected'); showCheck();})}
-function renderSort(t){state.selected={active:null,placements:{}}; els.work.innerHTML=`<div><div class="word-row">${t.items.map((it,i)=>`<span class="chip" data-i="${i}">${esc(it.text)}</span>`).join('')}</div><div class="sort-area">${t.groups.map(g=>`<div class="box" data-g="${esc(g)}"><h3>${esc(g)}</h3></div>`).join('')}</div></div>`; els.work.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{if(state.answered)return; state.selected.active=Number(c.dataset.i); els.work.querySelectorAll('.chip').forEach(x=>x.classList.remove('selected')); c.classList.add('selected');}); els.work.querySelectorAll('.box').forEach(box=>box.onclick=()=>{if(state.answered||state.selected.active===null)return; const i=state.selected.active; const chip=els.work.querySelector(`.chip[data-i="${i}"]`); box.appendChild(chip); chip.classList.remove('selected'); chip.classList.add('placed'); state.selected.placements[i]=box.dataset.g; state.selected.active=null; showCheck();})}
+function renderSort(t){
+  state.selected={active:null,placements:{}};
+  const items=shuffleArray((t.items||[]).map((it,i)=>({...it,__i:i})));
+  const groups=shuffleArray(t.groups||[]);
+  els.work.innerHTML=`<div><div class="word-row">${items.map(it=>`<span class="chip" data-i="${it.__i}">${esc(it.text)}</span>`).join('')}</div><div class="sort-area">${groups.map(g=>`<div class="box" data-g="${esc(g)}"><h3>${esc(g)}</h3></div>`).join('')}</div></div>`;
+  els.work.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{if(state.answered)return; state.selected.active=Number(c.dataset.i); els.work.querySelectorAll('.chip').forEach(x=>x.classList.remove('selected')); c.classList.add('selected');});
+  els.work.querySelectorAll('.box').forEach(box=>box.onclick=()=>{if(state.answered||state.selected.active===null)return; const i=state.selected.active; const chip=els.work.querySelector(`.chip[data-i="${i}"]`); box.appendChild(chip); chip.classList.remove('selected'); chip.classList.add('placed'); state.selected.placements[i]=box.dataset.g; state.selected.active=null; showCheck();})
+}
 function renderText(t){els.work.innerHTML=`<div class="text-answer"><label><b>Deine Antwort:</b><textarea id="textAnswer" placeholder="Schreibe hier deine Antwort ..."></textarea></label>${t.sampleAnswer?`<div class="sample"><b>Beispiel möglich:</b> ${esc(t.sampleAnswer)}</div>`:''}</div>`; document.getElementById('textAnswer').addEventListener('input',showCheck)}
 
 function evaluateText(t,val){
@@ -310,10 +382,10 @@ function evaluateText(t,val){
 }
 function checkAnswer(){
   if(!state.current||state.answered)return; const t=state.current; let ok=false, given='';
-  if(t.type==='choice'||t.type==='choice_reason'||t.type==='gap'){given=state.selected; ok=norm(given)===norm(t.correct);}
+  if(t.type==='choice'||t.type==='choice_reason'||t.type==='gap'){given=state.selected; ok=sameAnswer(given,t.correct);}
   if(t.type==='mark'){given=String(state.selected); ok=Number(state.selected)===Number(t.errorIndex);}
   if(t.type==='sort'){ok=t.items.every((it,i)=>state.selected.placements[i]===it.group); given=JSON.stringify(state.selected.placements);}
-  if(t.type==='text'){given=document.getElementById('textAnswer').value.trim(); ok=evaluateText(t,given);}
+  if(t.type==='text'||t.type==='free_text'){given=document.getElementById('textAnswer').value.trim(); ok=evaluateText(t,given);}
   state.answered=true; state.attempts++; state.lastResults.push(ok); state.lastResults=state.lastResults.slice(-20);
   const st=state.stats[t.stage]; st.attempts++; if(ok){state.correct++; st.correct++;} else {st.wrong++; const err=errorType(t); st.errorTypes[err]=(st.errorTypes[err]||0)+1; state.errorLog.push({time:new Date().toLocaleString('de-DE'),stage:t.stage,type:t.type,error:err,prompt:t.prompt,given,correct:t.correct||t.correction||'siehe Aufgabe'});}
   markSolution(ok);
@@ -324,11 +396,15 @@ function checkAnswer(){
 function errorType(t){return {choice:'Auswahlfehler',choice_reason:'Begründung unsicher',gap:'Lücke falsch',mark:'Fehlerstelle unsicher',sort:'Sortierung unsicher',text:'Freitext/Anwendung unsicher'}[t.type]||'Fehler'}
 function markSolution(ok){
   const t=state.current;
-  if(t.type==='choice'||t.type==='choice_reason'||t.type==='gap') els.work.querySelectorAll('.option').forEach(b=>{if(norm(b.dataset.v)===norm(t.correct))b.classList.add('correct'); else if(b.classList.contains('selected'))b.classList.add('wrong')});
+  if(t.type==='choice'||t.type==='choice_reason'||t.type==='gap') els.work.querySelectorAll('.option').forEach(b=>{if(sameAnswer(b.dataset.v,t.correct))b.classList.add('correct'); else if(b.classList.contains('selected'))b.classList.add('wrong')});
   if(t.type==='mark') els.work.querySelectorAll('.word-btn').forEach(b=>{const i=Number(b.dataset.i); if(i===Number(t.errorIndex))b.classList.add('correct'); else if(b.classList.contains('selected'))b.classList.add('wrong')});
   if(t.type==='sort') els.work.querySelectorAll('.chip').forEach(c=>{const i=Number(c.dataset.i); c.classList.add(state.selected.placements[i]===t.items[i].group?'correct':'wrong')});
 }
 function handleNew(ok){
+  if(!isNewProgressTask(state.current)){
+    handleReview(state.current.stage, ok);
+    return;
+  }
   if(ok){state.newCorrect++; state.newSinceReview++; els.feedback.className='feedback ok'; els.feedback.textContent='Richtig. Deine aktuelle Strategie wird sicherer.'; if(state.newCorrect>=REQUIRED_NEW_CORRECT)unlockStage();}
   else{els.feedback.className='feedback bad'; els.feedback.textContent='Noch nicht sicher. Schau dir den Regelhinweis an und versuche die nächste Aufgabe.';}
 }
