@@ -146,7 +146,18 @@ function progressKey(){return 'rechtschreibtrainer_rlp_v2_'+slug(state.studentNa
 function stage(){return DATA.stages[Math.min(state.stageIndex, DATA.stages.length-1)]}
 function label(k){return (DATA.stages.find(s=>s.key===k)||{label:k}).label}
 function currentRule(){const s=DATA.stages.find(x=>x.key===state.current?.stage)||stage(); return s ? `<b>${s.label}:</b> ${s.rule}<br><b>Beispiele:</b> ${(s.examples||[]).join(', ')}` : ''}
-function rand(a){return a[Math.floor(Math.random()*a.length)]}
+function randomInt(max){
+  max = Math.floor(Number(max)||0);
+  if(max <= 0) return 0;
+  if(window.crypto && crypto.getRandomValues){
+    const limit = Math.floor(0x100000000 / max) * max;
+    const buf = new Uint32Array(1);
+    do { crypto.getRandomValues(buf); } while(buf[0] >= limit);
+    return buf[0] % max;
+  }
+  return Math.floor(Math.random()*max);
+}
+function rand(a){return a[randomInt(a.length)]}
 function rank(level){return LEVEL_RANK[level]||1}
 function norm(s){return String(s||'').trim().toLowerCase().replace(/[„“"]/g,'').replace(/\s+/g,' ')}
 function normExact(s){return String(s??'').trim().replace(/[„“"]/g,'').replace(/\s+/g,' ')}
@@ -282,7 +293,7 @@ function chooseTask(){
   }
   let chosen=null;
   if(state.stageIndex>0 && state.newSinceReview>=REVIEW_AFTER) chosen=candidates.filter(c=>c.mode==='review').sort((a,b)=>b.weight-a.weight)[0];
-  if(!chosen){let sum=candidates.reduce((a,b)=>a+b.weight,0), r=Math.random()*sum; for(const c of candidates){r-=c.weight;if(r<=0){chosen=c;break}}}
+  if(!chosen){let sum=candidates.reduce((a,b)=>a+b.weight,0), r=(randomInt(1000000)/1000000)*sum; for(const c of candidates){r-=c.weight;if(r<=0){chosen=c;break}}}
   const tasks=availableTasks(chosen.key); let pool=tasks;
   if(state.current && tasks.length>1) pool=tasks.filter(x=>(x.id||x.prompt)!==(state.current.id||state.current.prompt));
   const base=rand(pool.length?pool:tasks);
@@ -293,11 +304,12 @@ function chooseTask(){
 }
 function taskKindName(t){return {choice:'Auswahl',choice_reason:'Begründung',gap:'Lückentext',mark:'Fehler finden',sort:'Sortieren',text:'Freitext',free_text:'Freitext'}[t.type]||t.type}
 
-// Mischt Arrays stabil pro Anzeige neu. So liegt die richtige Antwort nicht immer links.
+// Echte Zufallsmischung pro Anzeige: Fisher-Yates mit crypto.getRandomValues,
+// ohne Positionskorrektur. Jede Antwortposition ist gleich wahrscheinlich.
 function shuffleArray(arr){
   const a = Array.isArray(arr) ? arr.slice() : [];
   for(let i=a.length-1;i>0;i--){
-    const j=Math.floor(Math.random()*(i+1));
+    const j=randomInt(i+1);
     [a[i],a[j]]=[a[j],a[i]];
   }
   return a;
@@ -316,23 +328,8 @@ function shuffledOptions(t){
   // Falls die richtige Lösung aus Versehen nicht in den Optionen steht, wird sie ergänzt.
   if(t.correct!==undefined && !base.some(o=>sameAnswer(o,t.correct))) base.push(t.correct);
 
-  // Wirklich neu mischen. Zusätzlich wird verhindert, dass die richtige Lösung
-  // zweimal hintereinander bei derselben Aufgabe an derselben Position landet,
-  // sofern mindestens zwei Optionen vorhanden sind.
-  let mixed=shuffleArray(base);
-  if(t.correct!==undefined && mixed.length>1){
-    const key='lastCorrectIndex_'+(t.id||t.stage+'_'+t.prompt+'_'+t.correct);
-    const last=Number(sessionStorage.getItem(key));
-    let idx=mixed.findIndex(o=>sameAnswer(o,t.correct));
-    let tries=0;
-    while(idx===last && tries<10){
-      mixed=shuffleArray(base);
-      idx=mixed.findIndex(o=>sameAnswer(o,t.correct));
-      tries++;
-    }
-    if(idx>=0) sessionStorage.setItem(key,String(idx));
-  }
-  return mixed;
+  // Keine künstliche Positionsvermeidung: Links, Mitte und Rechts sind wirklich möglich.
+  return shuffleArray(base);
 }
 
 function gapSentenceHtml(t){
@@ -398,41 +395,12 @@ function checkAnswer(){
   if(t.type==='mark'){given=String(state.selected); ok=Number(state.selected)===Number(t.errorIndex);}
   if(t.type==='sort'){ok=t.items.every((it,i)=>state.selected.placements[i]===it.group); given=JSON.stringify(state.selected.placements);}
   if(t.type==='text'||t.type==='free_text'){given=document.getElementById('textAnswer').value.trim(); ok=evaluateText(t,given);}
-
-  // Nur Aufgaben der aktuell aktiven Etappe verändern den Etappenfortschritt.
-  // Wiederholungsaufgaben früherer Etappen bleiben reine Wiederholungen.
-  const affectsStageProgress = isNewProgressTask(t);
-
-  state.answered=true;
-  state.attempts++;
-  state.lastResults.push(ok);
-  state.lastResults=state.lastResults.slice(-20);
-
-  const st=state.stats[t.stage];
-  st.attempts++;
-  if(ok){
-    state.correct++;
-    st.correct++;
-    if(affectsStageProgress){
-      st.learningAttempts++;
-      st.learningCorrect++;
-    }
-  } else {
-    st.wrong++;
-    if(affectsStageProgress){
-      st.learningAttempts++;
-      st.learningWrong++;
-    }
-    const err=errorType(t);
-    st.errorTypes[err]=(st.errorTypes[err]||0)+1;
-    state.errorLog.push({time:new Date().toLocaleString('de-DE'),stage:t.stage,type:t.type,error:err,prompt:t.prompt,given,correct:t.correct||t.correction||'siehe Aufgabe'});
-  }
-
+  state.answered=true; state.attempts++; state.lastResults.push(ok); state.lastResults=state.lastResults.slice(-20);
+  const st=state.stats[t.stage]; st.attempts++; if(ok){state.correct++; st.correct++;} else {st.wrong++; const err=errorType(t); st.errorTypes[err]=(st.errorTypes[err]||0)+1; state.errorLog.push({time:new Date().toLocaleString('de-DE'),stage:t.stage,type:t.type,error:err,prompt:t.prompt,given,correct:t.correct||t.correction||'siehe Aufgabe'});}
   markSolution(ok);
-  if(affectsStageProgress) handleNew(ok); else handleReview(t.stage,ok);
-
+  if(t.mode==='new') handleNew(ok); else handleReview(t.stage,ok);
   els.check.classList.remove('show'); els.next.classList.add('show'); saveLocal(); renderJourney(); updateMenu();
-  track(`result|stage=${t.stage}|type=${t.type}|mode=${affectsStageProgress?'new':'review'}|progressAffected=${affectsStageProgress?1:0}|level=${state.effectiveLevel}|ok=${ok?1:0}`, {event:'result',stage:t.stage,type:t.type,level:state.effectiveLevel,ok,progress:progressPercent(),progressAffected:affectsStageProgress,attempts:state.attempts,error:ok?'':errorType(t)});
+  track(`result|stage=${t.stage}|type=${t.type}|mode=${t.mode}|level=${state.effectiveLevel}|ok=${ok?1:0}`, {event:'result',stage:t.stage,type:t.type,level:state.effectiveLevel,ok,progress:progressPercent(),attempts:state.attempts,error:ok?'':errorType(t)});
 }
 function errorType(t){return {choice:'Auswahlfehler',choice_reason:'Begründung unsicher',gap:'Lücke falsch',mark:'Fehlerstelle unsicher',sort:'Sortierung unsicher',text:'Freitext/Anwendung unsicher'}[t.type]||'Fehler'}
 function markSolution(ok){
@@ -442,8 +410,8 @@ function markSolution(ok){
   if(t.type==='sort') els.work.querySelectorAll('.chip').forEach(c=>{const i=Number(c.dataset.i); c.classList.add(state.selected.placements[i]===t.items[i].group?'correct':'wrong')});
 }
 function handleNew(ok){
-  // Sicherheitsriegel: Auch wenn eine Aufgabe versehentlich als „new“ markiert wurde,
-  // zählt sie nur, wenn ihre stage exakt der aktuellen Etappe entspricht.
+  // Sicherheitsriegel: Selbst wenn eine Aufgabe falsch als „new“ markiert wurde,
+  // zählt sie nur dann, wenn ihre stage exakt der aktuellen Etappe entspricht.
   if(!isNewProgressTask(state.current)){
     handleReview(state.current.stage, ok);
     return;
